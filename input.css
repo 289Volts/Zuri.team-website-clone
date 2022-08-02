@@ -1,57 +1,151 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--links: #e7332b;
+	--headings: #514949;
+	--heading: 1.73rem;
+	--subHeading: 1.5rem;
+	--text: 1rem;
 }
 
 @font-face {
-  font-family: "Averta 400";
-  src: url(Fonts/AvertaStd-Regular.ttf) format("truetype");
-  font-weight: 400;
+	font-family: "Averta 400";
+	src: url(Fonts/AvertaStd-Regular.ttf) format("truetype");
+	font-weight: 400;
 }
 
 @font-face {
-  font-family: "Averta 500";
-  src: url(Fonts/AvertaStd-Bold.ttf) format("truetype");
-  font-weight: 500;
+	font-family: "Averta 500";
+	src: url(Fonts/AvertaStd-Bold.ttf) format("truetype");
+	font-weight: 500;
 }
 
 @font-face {
-  font-family: "Averta 600";
-  src: url(Fonts/AvertaStd-Semibold.ttf) format("truetype");
-  font-weight: 600;
+	font-family: "Averta 600";
+	src: url(Fonts/AvertaStd-Semibold.ttf) format("truetype");
+	font-weight: 600;
 }
 
 @font-face {
-  font-family: "Averta 700";
-  src: url(Fonts/AvertaStd-ExtraBold.ttf) format("truetype");
-  font-weight: 700;
+	font-family: "Averta 700";
+	src: url(Fonts/AvertaStd-ExtraBold.ttf) format("truetype");
+	font-weight: 700;
 }
 
 body {
-  padding: 0.5rem;
+  font-family: "Averta 400", sans-serif;
 }
 
 .hero-section {
-  width: 100%;
-  margin-bottom: 4rem;
+	width: 100%;
+	margin-bottom: 4rem;
+	padding: 0.8rem;
+	background-image: url(images/hero-bg.svg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .hero-section__img {
-  padding: 6rem;
-  /* width: 100%; */
-  margin: 0 auto;
+	padding: 6.7rem 7.5rem 6.3rem 7.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.logo {
-  /* width: 60%; */
- 
+.hero-section__heading {
+	font-size: var(--heading);
+	text-align: center;
+	color: var(--headings);
+	margin-bottom: 2.3rem;
+}
+
+.hero-section__text {
+	text-align: center;
+	font-size: var(--text);
+	color: var(--headings);
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 5.7rem;
+	opacity: 0.9;
+}
+
+.hero-section__buttons {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3.8rem;
+}
+
+.hero-section__redbtn {
+  width: 65%;
+  font-weight: 500;
+  color: white;
+  background-color: var(--links);
+  border: none;
+  padding: 0.85rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.hero-section__transbtn {
+  width: 65%;
+  color: var(--links);
+  background-color: white;
+  border: 1px solid var(--links);
+  padding: 0.8rem 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.label h4 {
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: var(--links);
+  margin-bottom: 0.8rem;
+}
+
+.label p {
+  color: var(--headings);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.cards {
+	
+}
+.social-icons {
+	display: flex;
+	width: 100%;
+}
+
+.social-icons img {
+	width: 20px;
+}
+
+a {
+	color: var(--links);
+	text-decoration: none;
 }
 
 h2 {
-  font-family: "Averta 500";
+	font-family: "Averta 400", sans-serif;
 }
 
 p {
-  font-family: "Averta 400";
+	font-family: "Averta 400", sans-serif;
 }
