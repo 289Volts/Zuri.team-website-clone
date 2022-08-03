@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/averta-standard');
+@import url("http://fonts.cdnfonts.com/css/averta-standard");
 
 * {
 	box-sizing: border-box;
@@ -28,7 +28,7 @@ a {
 }
 
 body {
-	font-family: 'Averta Standard', 'Averta 400',  'Nunito Sans', sans-serif;
+	font-family: "Averta Standard", "Averta 400", "Nunito Sans", sans-serif;
 }
 /* Hero-Section */
 .hero-section {
@@ -76,12 +76,12 @@ body {
 }
 
 .hero-section__redbtn {
-	width: 60%;
+	width: 62%;
 	font-weight: 500;
 	color: white;
 	background-color: var(--links);
 	border: none;
-	padding: 0.85rem 1rem;
+	padding: 0.85rem 0.6rem;
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 2.4rem;
@@ -110,12 +110,14 @@ body {
 	color: white;
 }
 
-.hero-section__redbtn:active, .hero-section__transbtn:active {
+.hero-section__redbtn:active,
+.hero-section__transbtn:active {
 	border: 2px solid black;
 	border-radius: 10px;
 }
 
-.hero-section__redbtn:focus, .hero-section__transbtn:focus  {
+.hero-section__redbtn:focus,
+.hero-section__transbtn:focus {
 	border: 2px solid black;
 	border-radius: 10px;
 	outline: none;
@@ -147,13 +149,13 @@ a:not(#button):focus {
 	color: var(--headings);
 	font-size: 1.5rem;
 	line-height: 1.65;
-	padding-bottom: 4rem;
+	padding-bottom: 5rem;
 }
 
 /* Cards section */
 .cards {
-	padding: 0 1rem;
-	padding-top: 1rem;
+	padding: 0 1.5rem;
+	padding-top: 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -162,9 +164,9 @@ a:not(#button):focus {
 
 .card-container {
 	background-color: #fffafa;
-	padding: 2.5rem 3.1rem 5rem 3.8rem;
-	margin: 2rem 0;
-	margin-bottom: 3rem;
+	padding: 2.5rem 3rem 5rem 3.2rem;
+	margin: 0 0 2rem 0;
+	margin-bottom: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -195,7 +197,7 @@ footer {
 	padding: 5rem 5.2rem;
 	padding-top: 1.5rem;
 	margin-top: 13rem;
-	height: 100vh;
+	height: 90vh;
 	text-align: center;
 	position: relative;
 }
