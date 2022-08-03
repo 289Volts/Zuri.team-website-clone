@@ -1,15 +1,18 @@
 # Zuri.team-website-clone
 
+#CONTENTS
+Technologies used- href="#technologies used"
+
 # Column Card task for Zuri Training 
 
  This was the final task given at the Zuri training. It is a clone of the official website for Zuri and the adjoining pages under it.
-# TECHNOLOGIES USED
+# Tehnologies Used
 
 - HTML
 - CSS
 - Javascript
 - Git
-# DISPLAY
+# Layout
 
 - Flexbox
 - CSS Grid
@@ -18,20 +21,23 @@
 - Google Fonts
 - Media queries
 - Responsiveness
-# KNOWLEDGE GAINED
+
+# Links
+- 
+# Added Knowledge
 
 - Better understanding of scoping out layout.
 - I have improved my ability to write pseudocode by 2% lol.
 - I did all version control using Git and i am getting the hand of it pretty well.
-# EDUCATIONAL HELP
+# Resources
 
 - Youtube <https://www.youtube.com>
 - W3schools (https://www.w3schools.com)
-# AUTHOR
+# Author
 
 - Twitter - (https://www.twitter.com/289volts)
 - LinkedIn - (Https://Www.Linkedin.Com/In/Joshua-Roland)
 - Email - joshuaroland289@gmail.com
-# APPRECIATION 
+# Appreeciation
 
 Appreciation goes to the Zuri frontend mentors, techies in the Just Projects Whatsapp group,  and all who contributed in every way.
