@@ -1,6 +1,7 @@
 # Zuri.team-website-clone
 
-#CONTENTS
+# CONTENTS
+
 Technologies used- href="#technologies used"
 
 # Column Card task for Zuri Training 
