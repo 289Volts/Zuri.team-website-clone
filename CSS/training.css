@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryRed: #E7332B;
+    --texts: #454447;
+    --PrimaryGreen: #4abc83;
+    --BgColor: #FFFDF5;
+    --accordionBorder: #afa3bc;
+    --headings: #212026;
+    --navBg: #fffdf5;
+    
+}

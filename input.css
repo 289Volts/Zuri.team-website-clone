@@ -725,7 +725,7 @@ footer:nth-last-child(1) {
 	}
 
 	hr {
-		width: 97%;
+		width: 100%;
 		margin: 2rem auto;
 		margin-bottom: 1rem;
 		position: absolute;
