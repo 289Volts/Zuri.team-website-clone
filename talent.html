@@ -8,14 +8,33 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- fonts -->
-    <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
+    <!-- <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/talent.css">
-    <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
     <title>Zuri</title>
 </head>
 
 <body>
+    <div id="modal-container">
+        <div class="modal-contents">
+                <h2 class="modal-title">Talent Recuritment</h2>
+                <p class="modal-text">We will love to discuss your business and your talent needs.</p>
+                <a href="https://forms.gle/QFsTDVg2EhpY32Pd9"><button id="modalbtn-fill" class="modalbtn">Fill this form</button></a>
+                <p>OR</p>
+                <a href="https://calendly.com/zuri-team/consult-with-seyi?month=2022-04"><button id="modalbtn-book" class="modalbtn">Book a consultation</button></a>
+        </div>
+    </div>
+
+    <div id="modal-container2">
+        <div class="modal-content2">
+                <h2 class="modal-title">Talent Recuritment</h2>
+                <p class="modal-text">Interested in joining our Talent Pool?</p>
+                <a  href="https://docs.google.com/forms/d/e/1FAIpQLSenlbLaRmpPCRzby9DJ71pyChTBurIhcCFOyiZxEX1IMwxXtg/viewform"><button id="modalbtn-signup" class="modalbtn">Click here to sign up</button></a>
+        </div>
+    </div>
     <div class="container">
         <header>
             <div class="logo">
@@ -23,56 +42,62 @@
             </div>
             <nav>
                 <ul class="nav__ul">
-                    <li><a href="talent.html">Home</a></li>
-                    <li><a href="#impact">Impact</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
-                    <li><a class="hire" href="#hire">Hire Talents</a></li>
+                    <li><a class="nav__ul-links active"href="talent.html">Home</a></li>
+                    <li><a class="nav__ul-links"href="#impact">Impact</a></li>
+                    <li><a class="nav__ul-links"href="#why-us">Why Us</a></li>
+                    <li><a id="hirebtn" class="hire" href="#hire">Hire Talents</a></li>
                 </ul>
             </nav>
         </header>
 
         <section class="hero-section">
             <div class="hero">
-                <div class="right">
+                <div class="left">
                     <div class="hero__text">
                         <h1>Vetted and Trusted <span class="red-txt">talents</span></h1>
                         <p>At Zuri Team, we train, test and place talent in various industries. We have access to the
                             best pool of skills in the
                             tech Industry.</p>
                         <div class="hero__cta">
-                            <a href="#hire" class="hire2">Hire Talents</a>
+                            <a href="#hire"  ><button class="modalbtn" id="hirebtn">Hire Talents</button ></a>
                             <button id="hero__cta-gray">Join the Talent pool</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="left">
+                <div class="right">
                     <img src="images/talent.zuri.team/hero-img.png" alt="man using a pc">
                 </div>
             </div>
         </section>
     </div>
     <section id="impact" class="space">
-        <div class="impact__text container">
-            <p class="impact__text--title">We have impacted the lives of <span class="red-txt">thousands</span> around
-                the world</p>
-            <p class="impact__text--subtitle">6,000 trained in 14 months</p>
-            <p class="impact__text--subtitle2">Talent Placed in 5 countries</p>
-        </div>
-        <div class="flags container">
-            <img src="images/talent.zuri.team/germany.svg" alt="" class="flag">
-            <img src="images/talent.zuri.team/england.svg" alt="" class="flag">
-            <img src="images/talent.zuri.team/india.svg" alt="" class="flag">
-            <img src="images/talent.zuri.team/nigeria.svg" alt="" class="flag">
-            <img src="images/talent.zuri.team/usa.svg" alt="" class="flag">
-        </div>
+            <div class="wrapper container">
+                <div class="impact-left">
+                    <div class="impact__text container">
+                        <p class="impact__text--title">We have impacted the lives of <span class="red-txt">thousands</span> around
+                            the world</p>
+                        <p class="impact__text--subtitle">6,000 trained in 14 months</p>
+                        <p class="impact__text--subtitle2">Talent Placed in 5 countries</p>
+                    </div>
+                    <div class="flags container">
+                        <img src="images/talent.zuri.team/germany.svg" alt="" class="flag">
+                        <img src="images/talent.zuri.team/england.svg" alt="" class="flag">
+                        <img src="images/talent.zuri.team/india.svg" alt="" class="flag">
+                        <img src="images/talent.zuri.team/nigeria.svg" alt="" class="flag">
+                        <img src="images/talent.zuri.team/usa.svg" alt="" class="flag">
+                    </div>
+                </div>
+                <div class="impact-right">
+                    <div class="illustration">
+                        <img src="images/talent.zuri.team/illus.png" alt="" class="illus">
+                    </div>
+                </div>
+            </div>
 
-        <div class="illustration">
-            <img src="images/talent.zuri.team/illus.png" alt="" class="illus">
-        </div>
     </section>
 
-    <section class="container skills space">
+    <section class="container space skills">
         <p class="skills__title">
             Skills of our <span class="red-txt">talents</span> that you will need
         </p>
@@ -86,62 +111,89 @@
             Where our talents work
         </p>
         <div class="placements">
-            <div class="placement">GitHub</div>
-            <div class="placement">Microsoft</div>
-            <div class="placement">Reskill Americans</div>
-            <div class="placement">Flutterwave</div>
-            <div class="placement">Google</div>
-            <div class="placement">Career Transitioners</div>
+            <div class="placement item1">GitHub</div>
+            <div class="placement item2">Microsoft</div>
+            <div class="placement item3">Reskill Americans</div>
+            <div class="placement item4">Flutterwave</div>
+            <div class="placement item5">Google</div>
+            <div class="placement item6">Career Transitioners</div>
+            <div class="placement item7"></div>
+            <div class="placement item8"></div>
         </div>
     </section>
 
-    <section id="why-us space">
-        <div class="container">
+    <section id="why-us" class=" space">
+        <div class="container why-us__container">
             <p class="why-us__title">
                 Why Hire our <span class="red-txt">Talents</span>
             </p>
             <div class="why-us__cards">
                 <div class="why-us__card">
                     <img src="images/talent.zuri.team/collab.svg" alt="">
-                    <p class="why-us__cardtext">Zuri Team has a highly skilled set of talents that are built on referral and
+                    <p class="why-us__cardtext">Zuri Team has a highly skilled set of talents that are built on referral
+                        and
                         successful partnerships.</p>
                 </div>
                 <div class="why-us__card">
                     <img src="images/talent.zuri.team/gear.svg" alt="">
-                    <p class="why-us__cardtext">Our recruiters are exceptionally skilled in identifying top talent around
+                    <p class="why-us__cardtext">Our recruiters are exceptionally skilled in identifying top talent
+                        around
                         the globe and matching them with the client's
                         needs.</p>
                 </div>
                 <div class="why-us__card">
                     <img src="images/talent.zuri.team/hands.svg" alt="">
-                    <p class="why-us__cardtext">Our recruiters are exceptionally skilled in identifying top talent around
-                        the globe and
-                        matching them with the client's
-                        needs.</p>
+                    <p class="why-us__cardtext">We have an 85% fill ratio for every open position we partner for.</p>
                 </div>
                 <div class="why-us__card">
                     <img src="images/talent.zuri.team/notepad.svg" alt="">
-                    <p class="why-us__cardtext">Our recruiters are exceptionally skilled in identifying top talent around
-                        the globe and
-                        matching them with the client's
-                        needs.</p>
+                    <p class="why-us__cardtext">Contract renewal rate for our consultant is 90 percent.</p>
                 </div>
-                <div class="why-us__card">
+                <div class="why-us__card last-card">
                     <img src="images/talent.zuri.team/people.svg" alt="">
-                    <p class="why-us__cardtext">Our recruiters are exceptionally skilled in identifying top talent around
-                        the globe and
-                        matching them with the client's
-                        needs.</p>
+                    <p class="why-us__cardtext">60% of our consultants are converted to full-time employees.</p>
                 </div>
             </div>
             <div class="hero__cta why-us__cta">
-                <a href="#hire" class="hire2">Hire Talents</a>
-                <button id="hero__cta-gray why-us__cta-gray">Join the Talent pool</button>
+                <a href="#hire" id="hirebtn" class="hire2">Hire Talents</a>
+                <button class="why-us__cta-gray" id="hero__cta-gray">Join the Talent pool</button>
             </div>
-            </div>
+        </div>
         </div>
     </section>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/talent.zuri.team/logo white.svg" alt="">
+            </div>
+            <div class="social-icons">
+                <div class="icon"><a href="https://www.facebook.com/thezuriteam/"><img
+                            src="images/talent.zuri.team/facebook.svg" alt="facebook icon"></a></div>
+
+                <div class="icon"><a href="https://www.linkedin.com/company/zuri-team"><img
+                            src="images/talent.zuri.team/linkedin.svg" alt=""></a></div>
+
+                <div class="icon"><a href="https://twitter.com/thezuriteam"><img src="images/talent.zuri.team/twit.png"
+                            alt=""></a></div>
+
+                <div class="icon"><a href="https://www.youtube.com/thezuriteam"><img class="icon-png"
+                            src="images/talent.zuri.team/youtube.svg" alt=""></a></div>
+            </div>
+
+            <hr>
+
+            <div class="footer-text">
+                <p class="footer-text__txt">&copy; Copyright 2022 ZURI TEAM. All rights Reserved</p>
+            </div>
+
+            <div class="email">
+                <a class="footer-email" href="mailto:talent@zuri.team">talent@zuri.team</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
