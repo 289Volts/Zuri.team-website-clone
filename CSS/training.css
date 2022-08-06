@@ -1,18 +1,17 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-    --primaryRed: #E7332B;
-    --texts: #454447;
-    --PrimaryGreen: #4abc83;
-    --BgColor: #FFFDF5;
-    --accordionBorder: #afa3bc;
-    --headings: #212026;
-    --navBg: #fffdf5;
-    
+	--primaryRed: #e7332b;
+	--texts: #454447;
+	--PrimaryGreen: #4abc83;
+	--BgColor: #fffdf5;
+	--accordionBorder: #afa3bc;
+	--headings: #212026;
+	--navBg: #fffdf5;
 }
 
 body {
@@ -20,7 +19,7 @@ body {
 }
 
 .container {
-	width: 85%;
+	width: 88%;
 	margin: 0 auto;
 }
 
@@ -29,3 +28,410 @@ a {
 	text-decoration: none;
 	font-weight: 600;
 }
+
+/* Header */
+
+header {
+	padding: 1rem;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: none;
+}
+
+.header-logo {
+	width: 47%;
+	margin-top: 0.5rem;
+}
+
+.main-logo {
+	width: 100%;
+}
+
+.lollipop {
+	position: relative;
+	width: 40%;
+	margin-right: 0.9rem;
+}
+
+.circle {
+	width: 40%;
+	background-color: var(--primaryRed);
+	padding: 0.5rem;
+	shape-outside: circle();
+	clip-path: circle();
+}
+
+.circle img {
+	width: 100%;
+	margin-top: 0.2rem;
+}
+
+.pill-link {
+	position: absolute;
+	padding: 0.8rem 1rem;
+	padding-left: 1.5rem;
+	background-color: var(--primaryRed);
+	width: 90%;
+	text-align: center;
+	border-radius: 30px;
+	color: white;
+	font-weight: 500;
+	font-size: 1rem;
+	top: 12%;
+	left: 22%;
+	z-index: -1;
+}
+
+/* Hero-section */
+.hero-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.left-img {
+	margin-top: 2rem;
+}
+.left-img img,
+.right-img img {
+	width: 100%;
+}
+
+.hero-arrow,
+.sm-img,
+.right-img {
+	display: none;
+}
+
+.hero-text {
+	width: 100%;
+	padding-bottom: 6rem;
+	background-image: url("images/training.zuri.team/svgexport-3.svg");
+	background-size: 50px;
+	background-repeat: no-repeat;
+	background-position: 78% 92%;
+}
+
+.hero-txt1 {
+	text-align: center;
+	color: var(--primaryRed);
+	font-weight: 500;
+	font-size: 1.16rem;
+	margin-bottom: 1rem;
+}
+
+.hero-heading {
+	width: 100%;
+	font-size: 1.7rem;
+	padding: 0 0.5rem;
+	text-align: center;
+	font-weight: 600;
+	padding-bottom: 2.5rem;
+	background-image: url("images/training.zuri.team/svgexport-2.svg");
+	background-repeat: no-repeat;
+	background-size: 120px;
+	background-position: 85% 80%;
+}
+
+.hero-txt2 {
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+.hero-cta-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-cta {
+	padding: 0.7rem 1.5rem;
+	text-align: center;
+	border-radius: 50px;
+	color: white;
+	background-color: var(--primaryRed);
+}
+
+/* About */
+#about {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+	border-top: 1px solid rgba(0, 0, 0, 0.35);
+	border-top: 0.1px solid (0, 0, 0, 0.35);
+	padding: 2rem 0;
+}
+
+.left p {
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+.center {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.center img {
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.right p {
+	font-size: 1.15rem;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.read-more {
+	color: var(--PrimaryGreen);
+	text-decoration: underline;
+}
+
+/* why-us */
+#why-us {
+	width: 100% !important;
+    background-color: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0))!important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5rem 0;
+    padding-bottom: 3rem;
+	background-image: url("/images/training.zuri.team/svgexport-5.svg");
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: 50% 7%;
+	margin: 0 !important;
+}
+
+.why-us__text p {
+	color: var(--primaryRed);
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.why-us__text h2 {
+	line-height: 1.4;
+	font-size: 1.5rem;
+}
+
+.why-us__img {
+	display: none;
+}
+
+/* why-us cards */
+.cards {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    margin-bottom: 6rem;
+}
+
+.card-container {
+	padding: 4rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.red {
+	background-color: var(--primaryRed);
+	color: white;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+}
+
+.white {
+	border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+}
+
+.card-container h1 {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.white p:nth-child(3) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.middle-txt {
+	margin: 2rem 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+/* help */
+.help-section {
+    background-color: var(--primaryRed);
+    width: 100%;
+}
+
+.help-container {
+    padding: 6rem 0;
+    background-image: url("/images/training.zuri.team/svgexport-11.svg"), url('/images/training.zuri.team/svgexport-16.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-size: 55px, 40px;
+	background-position: 54% 5.5%, 5% 96.5%;
+}
+
+.help-text {
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.help-text__bold {
+    line-height: 1.4;
+    padding-right: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.help-left p { 
+    font-weight: 400;
+}
+
+.white-cta-pill {
+    padding: 0.7rem 1.5rem;
+	text-align: center;
+	border-radius: 50px;
+	color: var(--primaryRed);
+    font-weight: 600;
+	background-color: white;
+}
+
+.help-cta {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.pills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.6rem  0.8rem;
+    margin-bottom: 1rem;
+    
+}
+
+.pill p {
+    font-size: 0.8rem;
+    padding: 0 0.8rem;
+}
+
+.pill img {
+    width: 35px;
+}
+
+.help-right {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.help-right img {
+    width: 100%;
+}
+
+/* Scope of program */
+
+.scope {
+    background-color: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0))!important;
+    padding: 4rem 0 6rem 0;
+}
+
+.scope-text {
+    padding-bottom: 8.5rem;
+    background-image: url('/images/training.zuri.team/svgexport-17.svg');
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: 50% 100%;
+}
+
+
+.scope-text p {
+    color: var(--primaryRed);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+.scope-cta-pill {
+	padding: 0.7rem 1.5rem;
+	text-align: center;
+    border-radius: 50px;
+	color: white;
+	background-color: var(--primaryRed);
+}
+
+.scope-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scope-card-container {
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    padding: 2rem 2.5rem 5rem 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.scope-card-container h3 {
+    font-size: 1.3rem;
+}
+
+.languages {
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.language {
+    width: 14%;
+    margin-right: 0.8rem;
+}
+
+.img-corr-one {
+    width: 28%;
+}
+
+ .img-corr-two {
+    width: 30%;
+}
+
+.scope-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+

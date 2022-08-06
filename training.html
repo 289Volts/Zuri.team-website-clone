@@ -10,7 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="CSS/training.css">
@@ -20,19 +20,23 @@
 <body>
     <!-- Navigation -->
     <header>
-        <a href="training.html"><img src="images/training.zuri.team/logo.svg" alt="Main Logo"></a>
-
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#program">Stacks Covered</a></li>
-                <li><a href="#FAQ">FAQs</a></li>
-            </ul>
-        </nav>
-        <div>
-            <div class="circle"><img src="images/training.zuri.team/thumbs.png" alt=""></div>
-            <div class="pill">Enroll Now</div>
+        <div class="navbar">
+            <div class="header-logo">
+                <a href="training.html"><img class="main-logo" src="images/training.zuri.team/logo.svg"
+                        alt="Main Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#program">Stacks Covered</a></li>
+                    <li><a href="#FAQ">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="lollipop">
+                <div class="circle"><img src="images/training.zuri.team/thumbs.png" alt=""></div>
+                <a href="" class="pill-link">Enroll Now</a>
+            </div>
         </div>
     </header>
 
@@ -43,7 +47,7 @@
                 <img src="images/training.zuri.team/lady1.jpg" alt="" class="girl-pic">
             </div>
 
-            <div class="smimg">
+            <div class="sm-img">
                 <img src="images/training.zuri.team/svgexport-4.svg" alt="">
             </div>
             <div class="hero-arrow">
@@ -52,12 +56,13 @@
 
 
             <div class="hero-text">
-                <p>And now your search has ended...</p>
-                <h1>Gain knowledge to help you scale through the tech industry for free.</h1>
-                <p>A basic introduction to software development and product design aimed at complete beginners, which
+                <p class="hero-txt1">And now your search has ended...</p>
+                <h1 class="hero-heading">Gain knowledge to help you scale through the tech industry for free.</h1>
+                <p class="hero-txt2">A basic introduction to software development and product design aimed at complete
+                    beginners, which
                     anyone can join</p>
-                <div class="hero-cta">
-                    <a href="index.html" target="_blank"><button>Enroll Now</button></a>
+                <div class="hero-cta-wrapper">
+                    <a class="hero-cta red-cta-pill" href="index.html" target="_blank">Enroll Now</a>
                 </div>
                 <div class="right-img"><img src="images/training.zuri.team/male1.jpg" alt=""></div>
             </div>
@@ -74,121 +79,194 @@
             <div class="right">
                 <p>to help increase the earning power of African youths by providing them with tech skills, community,
                     tools, resources,
-                    and jobs... <a href="https://ingressive.org/i4g-in-2021/">Read More</a></p>
+                    and jobs... <a href="https://ingressive.org/i4g-in-2021/" class="read-more">Read More</a></p>
             </div>
         </section>
-        <div class="left-facing-arrow">
+        <!-- <div class="left-facing-arrow">
             <img src="images/training.zuri.team/svgexport-5.svg" alt="">
-        </div>
+        </div> -->
 
         <!-- why us -->
         <section id="why-us" class="container">
             <div class="why-us__text">
-                <h2>Why Zuri Training?</h2>
-                <p>Here at Zuri, you gain access to enough knowledge to introduce and aid your success in the tech
-                    industry.</p>
+                <p>Why Zuri Training?</p>
+                <h2>Here at Zuri, you gain access to enough knowledge to introduce and aid your success in the tech
+                    industry.</h2>
             </div>
             <div class="why-us__img"><img src="images/training.zuri.team/Star.jpg" alt=""></div>
         </section>
 
         <!-- why-us cards section -->
         <section class="cards">
-            <div class="card-container">
+            <div class="card-container red">
                 <h1>01</h1>
-                <p>Fully
+                <p class="middle-txt">Fully
                     Remote</p>
                 <p>100% online classes available to anyone in the world.</p>
             </div>
 
-            <div class="card-container">
+            <div class="card-container white">
                 <h1>02</h1>
-                <p>Hands-on
+                <p class="middle-txt">Hands-on
                     Experience</p>
                 <p>We don't just teach you theory, we show you how to build things.</p>
             </div>
 
-            <div class="card-container">
+            <div class="card-container white">
                 <h1>03</h1>
-                <p>Collaborative
+                <p class="middle-txt">Collaborative
                     Learning</p>
                 <p>We connect you with like minds to grow together.</p>
             </div>
 
-            <div class="card-container">
+            <div class="card-container white">
                 <h1>04</h1>
-                <p>Real-life
+                <p class="middle-txt">Real-life
                     Projects</p>
                 <p>We give CV worthy projects to help you hit the ground running.</p>
             </div>
 
-            <div class="card-container">
+            <div class="card-container white">
                 <h1>05</h1>
-                <p>Beginner
+                <p class="middle-txt">Beginner
                     Friendly</p>
                 <p>We provide step-by-step procedures on how to get things done.</p>
             </div>
 
-            <div class="card-container">
+            <div class="card-container white">
                 <h1>06</h1>
-                <p>In-program
+                <p class="middle-txt">In-program
                     Mentorship</p>
                 <p>During and after the program you have access to experience seniors.</p>
             </div>
         </section>
-
-        <!-- Help -->
-        <section>
-            <div class="left">
+    </div>
+    <!-- Help -->
+    <section class="help-section">
+        <div class="help-container container">
+            <div class="help-left">
                 <div class="help-text">
                     <p class="help-txt">We will help you get started</p>
                     <h2 class="help-text__bold">High quality training with hands-on practice</h2>
                     <p help-txt>We give you weekly tasks, ranging from easy to complex, as you progress from stage to
                         stage; making it to the final
                         stage means you are now ready to continue learning and growing independently.</p>
-                    <a class="cta-pill" href="https://training.zuri.team/enroll">Enroll Now</a>
+
+                    <div class="help-cta">
+                        <a class="white-cta-pill" href="https://training.zuri.team/enroll">Enroll Now</a>
+                    </div>
 
                     <div class="pills">
                         <div class="pill">
-                            <img src="" alt="">
-                            <p></p>
+                            <img src="images/training.zuri.team/svgexport-12.svg" alt="icon">
+                            <p>Teamwork</p>
                         </div>
                         <div class="pill">
-                            <img src="" alt="">
-                            <p></p>
+                            <img src="images/training.zuri.team/svgexport-13.svg" alt="">
+                            <p>Mentorship</p>
                         </div>
                         <div class="pill">
-                            <img src="" alt="">
-                            <p></p>
+                            <img src="images/training.zuri.team/svgexport-14.svg" alt="">
+                            <p>Practice</p>
                         </div>
                         <div class="pill">
-                            <img src="" alt="">
-                            <p></p>
+                            <img src="images/training.zuri.team/svgexport-15.svg" alt="">
+                            <p>Games</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="right">
-                <img src="" alt="">
+            <div class="help-right">
+                <img src="images/training.zuri.team/bars.png" alt="">
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
 
     <!-- Scope of program -->
-    <section class="scope container">
-        <p>Scope Of Program</p>
-        <h2 class="scope-heading">Here is the list of areas that will be explored in the training.</h2>
+    <section class="scope">
+        <div class="container">
+            <div class="scope-text">
+                <p>Scope Of Program</p>
+                <h2 class="scope-heading">Here is the list of areas that will be explored in the training.</h2>
+            </div>
+            <div class="scope-cards">
+                <div class="scope-card-container">
+                    <h3>Frontend Development</h3>
+                    <div class="languages">
+                        <img src="images/training.zuri.team/svgexport-18.svg" alt="html icon" class="language">
+                        <img src="images/training.zuri.team/svgexport-19.svg" alt="css icon" class="language">
+                        <img src="images/training.zuri.team/svgexport-20.svg" alt="js icon"
+                            class="language img-corr-four">
+                    </div>
+                    <p>This track deals with the aspect of your application that the users interact with. A front-end developer will be able to
+                    correctly interpret a given design to the user interface.</p>
+                </div>
 
-        <div class="scope-cards">
-            <div class="scope-card-container"></div>
-            <div class="scope-card-container"></div>
-            <div class="scope-card-container"></div>
-            <div class="scope-card-container"></div>
-            <div class="scope-card-container"></div>
-            <div class="scope-card-container"></div>
+                <div class="scope-card-container">
+                    <h3>Backend Development</h3>
+                    <div class="languages">
+                        <img src="images/training.zuri.team/svgexport-21.svg" alt="php icon" class="language img-corr-four">
+                        <img src="images/training.zuri.team/svgexport-22.svg" alt="python icon" class="language img-corr-four">
+                        <img src="images/training.zuri.team/svgexport-20.svg" alt="js icon"
+                            class="language img-corr-four">
+                    </div>
+                    <p>This track deals with the aspect of the application the user does not directly interact with. It allows the frontend
+                    function either by running some back-end code or connecting to the database.</p>
+                </div>
+
+                <div class="scope-card-container">
+                    <h3>Product Design</h3>
+                    <div class="languages">
+                        <img src="images/training.zuri.team/svgexport-23.svg" alt="adobe xd icon" class="language img-corr-four">
+                        <img src="images/training.zuri.team/svgexport-24.svg" alt="figma icon" class="language img-corr-two">
+                        <img src="" alt=""
+                            class="language">
+                    </div>
+                    <p>This track deals with creating a graphic plan for an application. You will learn to convert project documentation into
+                    viewable and understandable graphic design for the developers to work with.</p>
+                </div>
+
+                <div class="scope-card-container">
+                    <h3>DevOPS</h3>
+                    <div class="languages">
+                        <img src="images/training.zuri.team/svgexport-25.svg" alt="ubuntu icon" class="language img-corr-two">
+                        <img src="images/training.zuri.team/svgexport-26.svg" alt="bash icon" class="language img-corr-two">
+                        <img src="images/training.zuri.team/svgexport-27.svg" alt="aws icon"
+                            class="language img-corr-two">
+                    </div>
+                    <p>The DevOps track is an extension of the backend track. It involves tools that’ll allow the participant to deploy
+                    solutions for public use.</p>
+                </div>
+
+                <div class="scope-card-container">
+                    <h3>Fullstack Development</h3>
+                    <div class="languages">
+                        <img src="images/training.zuri.team/svgexport-18.svg" alt="html icon" class="language">
+                        <img src="images/training.zuri.team/svgexport-19.svg" alt="css icon" class="language">
+                        <img src="images/training.zuri.team/svgexport-20.svg" alt="js icon" class="language img-corr-four">
+                        <img src="images/training.zuri.team/svgexport-22.svg" alt="python icon" class="language img-corr-four">
+                    </div>
+                    <p>A combination of frontend, backend, and DevOps. This track will only be available to participants who have the time to
+                    dedicate to the training.</p>
+                </div>
+
+                <div class="scope-card-container">
+                    <h3>Frameworks
+</h3>
+                    <div class="languages">
+                        <img src="images/training.zuri.team/svgexport-28.svg" alt="html icon" class="language img-corr-one">
+                        <img src="images/training.zuri.team/svgexport-29.svg" alt="css icon" class="language img-corr-one">
+                        <img src="images/training.zuri.team/svgexport-30.svg" alt="js icon" class="language img-corr-one">
+                    </div>
+                    <p>During the program we will be exploring several useful frameworks to give you an edge in the industry and help you
+                    develop complex applications much faster.</p>
+                </div>
+            </div>
+            <div class="scope-cta">
+                <a class="scope-cta-pill" href="https://training.zuri.team/enroll">Enroll Now</a>
+            </div>
         </div>
-
-        <div class="scope-cta"><a href="https://training.zuri.team/enroll"></a>Enroll Now</div>
     </section>
 
     <!-- FAQs -->
@@ -240,7 +318,7 @@
     </section>
 
 
-<!-- Program structure -->
+    <!-- Program structure -->
     <section id="program" class="container">
         <h4 class="program-smheading">Structure</h4>
         <h2 class="program-heading">Program Structure</h2>
