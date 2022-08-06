@@ -14,3 +14,18 @@
     --navBg: #fffdf5;
     
 }
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 600;
+}
