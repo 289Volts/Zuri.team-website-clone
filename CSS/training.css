@@ -33,6 +33,13 @@ a {
 
 header {
 	padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0;
+    z-index: 1;
+    background-color: white
+    ;
 }
 
 .navbar {
@@ -86,7 +93,7 @@ nav ul {
 	font-weight: 500;
 	font-size: 1rem;
 	top: 12%;
-	left: 22%;
+	left: 21%;
 	z-index: -1;
 }
 
@@ -113,7 +120,7 @@ nav ul {
 .hero-text {
 	width: 100%;
 	padding-bottom: 6rem;
-	background-image: url("images/training.zuri.team/svgexport-3.svg");
+	background-image: url("/images/training.zuri.team/svgexport-3.svg");
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: 78% 92%;
@@ -134,9 +141,9 @@ nav ul {
 	text-align: center;
 	font-weight: 600;
 	padding-bottom: 2.5rem;
-	background-image: url("images/training.zuri.team/svgexport-2.svg");
+	background-image: url("/images/training.zuri.team/svgexport-2.svg");
 	background-repeat: no-repeat;
-	background-size: 120px;
+	background-size: 110px;
 	background-position: 85% 80%;
 }
 
@@ -202,12 +209,18 @@ nav ul {
 /* why-us */
 #why-us {
 	width: 100% !important;
-    background-color: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0))!important;
+	background-color: linear-gradient(
+		180deg,
+		rgba(255, 244, 240, 0),
+		#fff4f0 17.19%,
+		#fff4f0 84.37%,
+		rgba(255, 244, 240, 0)
+	) !important;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 5rem 0;
-    padding-bottom: 3rem;
+	padding-bottom: 3rem;
 	background-image: url("/images/training.zuri.team/svgexport-5.svg");
 	background-repeat: no-repeat;
 	background-size: 50px;
@@ -235,7 +248,7 @@ nav ul {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-    margin-bottom: 6rem;
+	margin-bottom: 6rem;
 }
 
 .card-container {
@@ -244,19 +257,60 @@ nav ul {
 	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 20px;
-    margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .red {
 	background-color: var(--primaryRed);
 	color: white;
-    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+	box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    background-image: url("/images/training.zuri.team/curvewhite.png");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: top right;
 }
 
 .white {
 	border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+	background-color: white;
+	box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+      
+}
+
+.red:hover,
+.white:hover {
+	transform: translate3d(0px, -16px, 0px);
+}
+
+.white1 {
+  background-image: url("/images/training.zuri.team/svgexport-6.svg");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: top right;
+}
+.white2 {
+  background-image: url("/images/training.zuri.team/svgexport-7.svg");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: top right;
+}
+.white3 {
+  background-image: url("/images/training.zuri.team/svgexport-8.svg");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: top right;
+}
+.white4 {
+  background-image: url("/images/training.zuri.team/svgexport-9.svg");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: top right;
+}
+.white5 {
+  background-image: url("/images/training.zuri.team/svgexport-10.svg");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: top right;
 }
 
 .card-container h1 {
@@ -265,8 +319,8 @@ nav ul {
 }
 
 .white p:nth-child(3) {
-    font-weight: 500;
-    font-size: 1.1rem;
+	font-weight: 500;
+	font-size: 1.1rem;
 }
 
 .middle-txt {
@@ -277,161 +331,441 @@ nav ul {
 
 /* help */
 .help-section {
-    background-color: var(--primaryRed);
-    width: 100%;
+	background-color: var(--primaryRed);
+	width: 100%;
 }
 
 .help-container {
-    padding: 6rem 0;
-    background-image: url("/images/training.zuri.team/svgexport-11.svg"), url('/images/training.zuri.team/svgexport-16.svg');
+	padding: 6rem 0;
+	background-image: url("/images/training.zuri.team/svgexport-11.svg"),
+		url("/images/training.zuri.team/svgexport-16.svg");
 	background-repeat: no-repeat, no-repeat;
 	background-size: 55px, 40px;
 	background-position: 54% 5.5%, 5% 96.5%;
 }
 
 .help-text {
-    font-size: 1.1rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
+	font-size: 1.1rem;
+	color: white;
+	display: flex;
+	flex-direction: column;
 }
 
 .help-text__bold {
-    line-height: 1.4;
-    padding-right: 2.5rem;
-    margin-bottom: 2rem;
+	line-height: 1.4;
+	padding-right: 2.5rem;
+	margin-bottom: 2rem;
 }
 
-.help-left p { 
-    font-weight: 400;
+.help-left p {
+	font-weight: 400;
 }
 
 .white-cta-pill {
-    padding: 0.7rem 1.5rem;
+	padding: 0.7rem 1.5rem;
 	text-align: center;
 	border-radius: 50px;
 	color: var(--primaryRed);
-    font-weight: 600;
+	font-weight: 600;
 	background-color: white;
 }
 
 .help-cta {
-    width: 100%;
-    padding: 3rem 0;
+	width: 100%;
+	padding: 3rem 0;
 }
 
 .pills {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .pill {
-    display: flex;
-    align-items: center;
-    width: 45%;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 0.6rem  0.8rem;
-    margin-bottom: 1rem;
-    
+	display: flex;
+	align-items: center;
+	width: 45%;
+	border: 2px solid white;
+	border-radius: 50px;
+	padding: 0.6rem 0.8rem;
+	margin-bottom: 1rem;
 }
 
 .pill p {
-    font-size: 0.8rem;
-    padding: 0 0.8rem;
+	font-size: 0.8rem;
+	padding: 0 0.8rem;
 }
 
 .pill img {
-    width: 35px;
+	width: 35px;
 }
 
 .help-right {
-    width: 100%;
-    margin-top: 1rem;
+	width: 100%;
+	margin-top: 1rem;
 }
 
 .help-right img {
-    width: 100%;
+	width: 100%;
 }
 
 /* Scope of program */
 
 .scope {
-    background-color: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0))!important;
-    padding: 4rem 0 6rem 0;
+	background-color: linear-gradient(
+		180deg,
+		rgba(255, 244, 240, 0),
+		#fff4f0 17.19%,
+		#fff4f0 84.37%,
+		rgba(255, 244, 240, 0)
+	) !important;
+	padding: 4rem 0 6rem 0;
 }
 
 .scope-text {
-    padding-bottom: 8.5rem;
-    background-image: url('/images/training.zuri.team/svgexport-17.svg');
+	padding-bottom: 8.5rem;
+	background-image: url("/images/training.zuri.team/svgexport-17.svg");
 	background-repeat: no-repeat;
 	background-size: 45%;
 	background-position: 50% 100%;
 }
 
-
 .scope-text p {
-    color: var(--primaryRed);
-    font-weight: 500;
-    font-size: 1.1rem;
+	color: var(--primaryRed);
+	font-weight: 500;
+	font-size: 1.1rem;
 }
-
 
 .scope-cta-pill {
 	padding: 0.7rem 1.5rem;
 	text-align: center;
-    border-radius: 50px;
+	border-radius: 50px;
 	color: white;
 	background-color: var(--primaryRed);
 }
 
 .scope-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .scope-card-container {
-    border-radius: 30px;
-    background-color: white;
-    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
-    padding: 2rem 2.5rem 5rem 2.5rem;
-    margin-bottom: 1.5rem;
+	border-radius: 30px;
+	background-color: white;
+	box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+	padding: 2rem 2.5rem 5rem 2.5rem;
+	margin-bottom: 1.5rem;
 }
 
-
 .scope-card-container h3 {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
 .languages {
-    display: flex;
-    width: 100%;
-    margin: 1.5rem 0 2rem 0;
+	display: flex;
+	width: 100%;
+	margin: 1.5rem 0 2rem 0;
 }
 
 .language {
-    width: 14%;
-    margin-right: 0.8rem;
+	width: 14%;
+	margin-right: 0.8rem;
 }
 
 .img-corr-one {
-    width: 28%;
+	width: 28%;
 }
 
- .img-corr-two {
-    width: 30%;
+.img-corr-two {
+	width: 30%;
 }
 
 .scope-cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4rem;
 }
 
+/* FAQs */
+#FAQ {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+	border-top: 1px solid rgba(0, 0, 0, 0.35);
+	padding: 6rem 0 3rem 0;
+	background-image: url("/images/training.zuri.team/svgexport-31.svg");
+	background-repeat: no-repeat;
+	background-size: 21%;
+	background-position: 15% 6%;
+}
 
+.faq-txt {
+	color: var(--primaryRed);
+	text-align: center;
+	font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.faq-heading {
+	margin-bottom: 4rem;
+}
+
+#accordion {
+	width: 100%;
+	padding: 2rem 1rem;
+	border: 0.05px solid black !important;
+	font-size: 1rem;
+	text-align: left;
+	font-family: inherit;
+	position: relative;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.panel {
+	display: none;
+}
+
+.close {
+	font-size: 1.5rem;
+	font-weight: 500;
+	position: absolute;
+	top: 29%;
+	right: 5%;
+}
+
+.padded {
+	padding-right: 3rem !important;
+}
+
+.close:hover {
+	transform: rotateX(360deg);
+}
+
+.twitter-cta-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.twitter-cta {
+	padding-bottom: 0.5rem;
+	padding-left: 0.8rem;
+	padding-right: 0.9rem;
+}
+
+.twitter-cta img {
+	vertical-align: middle;
+	margin-right: 0.3rem;
+	padding-bottom: 0.2rem;
+}
+
+.faq-twitter {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+/* Program Structure */
+#program {
+	text-align: center;
+	padding: 4rem 1.5rem;
+	width: 100%;
+	margin: 0 !important;
+	background-color: linear-gradient(
+		180deg,
+		rgba(255, 244, 240, 0),
+		#fff4f0 17.19%,
+		#fff4f0 84.37%,
+		rgba(255, 244, 240, 0)
+	) !important;
+	background-image: url("/images/training.zuri.team/svgexport-31.svg"),
+		url("/images/training.zuri.team/svgexport-34.svg"),
+		url("/images/training.zuri.team/red-dots.png");
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 70px, 40px, 150px;
+	background-position: 16% 2.3%, 93% 2%, 100% 97%;
+}
+
+.program-smheading {
+	color: var(--primaryRed);
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.program-heading {
+	margin-bottom: 1.5rem;
+}
+
+.program-txt {
+	margin-bottom: 4rem;
+}
+
+.program-cards {
+	display: flex;
+	flex-direction: column;
+	background-color: linear-gradient(
+		180deg,
+		rgba(255, 244, 240, 0),
+		#fff4f0 17.19%,
+		#fff4f0 84.37%,
+		rgba(255, 244, 240, 0)
+	) !important;
+}
+
+.program-card {
+	color: white;
+	background-color: #1b1a20;
+	padding: 4rem 3rem;
+	text-align: left;
+	border-radius: 60px;
+	margin-bottom: 2rem;
+	box-shadow: 0 31px 60px rgba(231, 51, 43, 0.2) !important;
+}
+
+.program-card h2 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.program-card p {
+	font-size: 0.97rem;
+}
+
+.list {
+	margin-top: 1.5rem;
+}
+
+.list p {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+}
+
+.list li {
+	margin-left: 1.2rem;
+	line-height: 1.4;
+	font-weight: 500;
+}
+
+.list li img {
+    width: 7%;
+    margin-left: 5px;
+}
+
+.p-c-left {
+	background-image: url("/images/training.zuri.team/hour-glass.png");
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: 90% 91.5%;
+}
+
+.p-c-right {
+	background-image: url("/images/training.zuri.team/time.png");
+	background-repeat: no-repeat;
+	background-size: 110px;
+	background-position: 90% 90%;
+}
+
+/* get started */
+.get-started-container {
+	background-color: var(--primaryRed);
+	color: white;
+	text-align: center;
+	padding: 5rem 5rem;
+	border-radius: 40px;
+	background-image: url("/images/training.zuri.team/svgexport-39.svg"),
+		url("/images/training.zuri.team/svgexport-40.svg"),
+		url("/images/training.zuri.team/svgexport-16.svg"),
+		url("/images/training.zuri.team/svgexport-38.svg");
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 90px, 90px, 80px, 70px;
+	background-position: top right, bottom left, bottom right, 10% 8%;
+}
+
+.get-started-container h2 {
+	font-weight: 700;
+	margin: 1rem 0 2rem 0;
+}
+
+.get-started-cta {
+	display: flex;
+	justify-content: center;
+}
+
+/* Footer */
+.footer-wrapper {
+	padding: 6rem 0 2rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+}
+.footer-top {
+	order: 1;
+}
+.footer-logo {
+	width: 100%;
+	/* order: 1; */
+}
+
+.socials {
+	order: 2;
+	margin: 1rem 0 0 0;
+    width: 45%;
+    margin: 1rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	order: 2;
+	display: flex;
+}
+
+.sub-links {
+	order: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.i4g {
+	order: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.i4g a {
+	margin: 2rem 0 !important;
+	color: black;
+    font-weight: 500;
+}
+.policy {
+	order: 2;
+}
+
+.policy a {
+	color: black;
+    font-weight: 500;
+}
+
+.copyright {
+	order: 2;
+    width: 100%;
+}
+
+hr {
+	width: 90%;
+	margin: 3rem auto 1rem auto;
+	height: 0.1px !important;
+	background-color: #454447;
+	order: 3;
+}
