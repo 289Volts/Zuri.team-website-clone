@@ -144,7 +144,7 @@ nav ul {
 	text-align: center;
 	font-weight: 600;
 	padding-bottom: 2.5rem;
-	background-image: url("/images/training.zuri.team/svgexport-2.svg");
+	background-image: url("../images/training.zuri.team/svgexport-2.svg");
 	background-repeat: no-repeat;
 	background-size: 105px;
 	background-position: 83% 75%;
@@ -228,7 +228,7 @@ nav ul {
 	justify-content: center;
 	padding: 5rem 0;
 	padding-bottom: 3rem;
-	background-image: url("/images/training.zuri.team/svgexport-5.svg");
+	background-image: url("../images/training.zuri.team/svgexport-5.svg");
 	background-repeat: no-repeat;
 	background-size: 50px;
 	background-position: 48% 16%;
@@ -297,7 +297,7 @@ nav ul {
 }
 
 .white1 {
-	background-image: url("images/training.zuri.team/svgexport-6.svg");
+	background-image: url("/images/training.zuri.team/svgexport-6.svg");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
@@ -354,8 +354,8 @@ nav ul {
 
 .help-container {
 	padding: 6rem 0;
-	background-image: url("/images/training.zuri.team/svgexport-11.svg"),
-		url("/images/training.zuri.team/svgexport-16.svg");
+	background-image: url("../images/training.zuri.team/svgexport-11.svg"),
+		url("../images/training.zuri.team/svgexport-16.svg");
 	background-repeat: no-repeat, no-repeat;
 	background-size: 55px, 40px;
 	background-position: 54% 5%, 5% 96.5%;
@@ -448,7 +448,7 @@ nav ul {
 
 .scope-text {
 	padding-bottom: 8.5rem;
-	background-image: url("/images/training.zuri.team/svgexport-17.svg");
+	background-image: url("../images/training.zuri.team/svgexport-17.svg");
 	background-repeat: no-repeat;
 	background-size: 45%;
 	background-position: 50% 100%;
@@ -539,7 +539,7 @@ nav ul {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 	border-top: 1px solid rgba(0, 0, 0, 0.35);
 	padding: 6rem 0 3rem 0;
-	background-image: url("/images/training.zuri.team/svgexport-31.svg");
+	background-image: url("../images/training.zuri.team/svgexport-31.svg");
 	background-repeat: no-repeat;
 	background-size: 21%;
 	background-position: 15% 6%;
@@ -636,9 +636,9 @@ summary {
 		#fff4f0 84.37%,
 		rgba(255, 244, 240, 0)
 	) !important;
-	background-image: url("/images/training.zuri.team/svgexport-31.svg"),
-		url("/images/training.zuri.team/svgexport-34.svg"),
-		url("/images/training.zuri.team/red-dots.png");
+	background-image: url("../images/training.zuri.team/svgexport-31.svg"),
+		url("../images/training.zuri.team/svgexport-34.svg"),
+		url("../images/training.zuri.team/red-dots.png");
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-size: 70px, 40px, 150px;
 	background-position: 16% 2%, 93% 2%, 100% 97%;
@@ -712,20 +712,21 @@ summary {
 }
 
 .p-c-left {
-	background-image: url("/images/training.zuri.team/hour-glass.png");
+	background-image: url("../images/training.zuri.team/hour-glass.png");
 	background-repeat: no-repeat;
 	background-size: 70px;
 	background-position: 90% 91.5%;
 }
 
 .p-c-right {
-	background-image: url("/images/training.zuri.team/time.png");
+	background-image: url("../images/training.zuri.team/time.png");
 	background-repeat: no-repeat;
 	background-size: 110px;
 	background-position: 90% 90%;
 }
 
-#info1, .info-btn {
+#info1,
+.info-btn {
 	background: transparent;
 	border: none;
 	display: inline;
@@ -775,7 +776,6 @@ summary {
 	fill: red;
 }
 
-
 .modal1 {
 	opacity: 1 !important;
 	width: 90%;
@@ -792,12 +792,13 @@ summary {
 	left: 0;
 	right: 0;
 	bottom: 0;
-} 
-
-.modal-container2, .modal-container3, .modal-container4 {
-	display: none;
 }
 
+.modal-container2,
+.modal-container3,
+.modal-container4 {
+	display: none;
+}
 
 /* get started */
 .get-started-container {
@@ -806,10 +807,10 @@ summary {
 	text-align: center;
 	padding: 5rem 5rem;
 	border-radius: 40px;
-	background-image: url("/images/training.zuri.team/svgexport-39.svg"),
-		url("/images/training.zuri.team/svgexport-40.svg"),
-		url("/images/training.zuri.team/svgexport-16.svg"),
-		url("/images/training.zuri.team/svgexport-38.svg");
+	background-image: url("../images/training.zuri.team/svgexport-39.svg"),
+		url("../images/training.zuri.team/svgexport-40.svg"),
+		url("../images/training.zuri.team/svgexport-16.svg"),
+		url("../images/training.zuri.team/svgexport-38.svg");
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-size: 90px, 90px, 80px, 70px;
 	background-position: top right, bottom left, bottom right, 10% 8%;
