@@ -140,7 +140,6 @@ nav ul {
 .hero-heading {
 	width: 100%;
 	font-size: 1.7rem;
-	/* padding: 0 0.5rem; */
 	text-align: center;
 	font-weight: 600;
 	padding-bottom: 2.5rem;
@@ -410,7 +409,7 @@ nav ul {
 	width: 47%;
 	border: 2px solid white;
 	border-radius: 50px;
-	padding: 0.7rem 0.7rem;
+	padding: 0.7rem;
 	margin-bottom: 1rem;
 }
 
@@ -463,7 +462,7 @@ nav ul {
 
 .scope-heading {
 	font-weight: 600;
-	line-height: 1.35;
+	line-height: 1.3;
 }
 
 .scope-cta-pill {
@@ -1003,7 +1002,13 @@ hr {
 }
 }
 
+/* Tablets */
 @media (min-width: 768px) {
+
+	.container {
+		width: 90%;
+		padding-top: 6rem;
+	}
 	.navbar {
 		width: 90%;
 		margin: 0 auto;
@@ -1015,5 +1020,137 @@ hr {
 .lollipop {
 	width: 25%;
 	margin-right: 0.9rem;
+}
+
+.left-img {
+	width: 76%;
+	margin: 0 auto;
+}
+
+.left-img img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.hero-text {
+	padding-bottom: 9rem;
+	background-image: url("/images/training.zuri.team/svgexport-3.svg"), url('../images/training.zuri.team/svgexport-4.svg');
+	background-size: 14%, 8%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 68% 92%, 5% 80%;
+}
+
+.hero-txt1 {
+	margin-bottom: 0.5rem;
+}
+
+.hero-heading {
+	font-size: 2.5rem;
+	background-size: 23%;
+	background-position: 94% 75%;
+}
+
+.hero-txt2 {
+	font-size: 1.2rem;
+	padding: 0 6rem;
+}
+
+.hero-cta {
+	padding: 0.7rem 1rem;
+	font-size: 1.2rem;
+	width: 23%;
+	font-weight: 400;
+}
+
+.center {
+	width: 42%;
+}
+
+.left p {
+	font-size: 1.5rem;
+}
+
+.right p {
+	text-align: right;
+}
+
+#why-us {
+	background-size: 15%;
+	background-position: 48% 16%;
+	padding: 6rem 0;
+	padding-bottom: 3rem;
+}
+
+.cards {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card-container {
+	width: 48%;
+}
+
+.middle-txt {
+	margin: 1.5rem 0;
+	padding-right: 6rem;
+}
+
+.help-container {
+	background-size: 14%, 13%;
+	background-position: 70% 3%, 5% 96.5%;
+	/* display: flex; */
+	/* justify-content: space-between; */
+
+}
+
+.help-left {
+	display: flex;
+	flex-direction: row;
+}
+
+.pill {
+	width: 23%;
+	margin: 0;
+padding: 0.5rem 0.6rem;
+}
+
+.help-right {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+
+.scope-text {
+	padding-bottom: 8.5rem;
+	background-size: 27%;
+	background-position: 70% 90%;
+	width: 70%;
+}
+
+.scope-cards {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.scope-card-container {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 47%;
+	margin-bottom: 0;
+	padding: 3rem ;
+}
+
+#FAQ {
+	background-size: 18%;
+	background-position: 15% 6%;
+}
+
+.faq-heading {
+	text-align: center;
 }
 }
