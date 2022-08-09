@@ -123,7 +123,7 @@ nav ul {
 .hero-text {
 	width: 100%;
 	padding-bottom: 6rem;
-	background-image: url("/images/training.zuri.team/svgexport-3.svg");
+	background-image: url("../images/training.zuri.team/svgexport-3.svg");
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: 78% 92%;
@@ -271,7 +271,7 @@ nav ul {
 	background-color: var(--primaryRed);
 	color: white;
 	box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
-	background-image: url("/images/training.zuri.team/curvewhite.png");
+	background-image: url("../images/training.zuri.team/curvewhite.png");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
@@ -295,31 +295,31 @@ nav ul {
 }
 
 .white1 {
-	background-image: url("/images/training.zuri.team/svgexport-6.svg");
+	background-image: url("../images/training.zuri.team/svgexport-6.svg");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
 }
 .white2 {
-	background-image: url("/images/training.zuri.team/svgexport-7.svg");
+	background-image: url("../images/training.zuri.team/svgexport-7.svg");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
 }
 .white3 {
-	background-image: url("/images/training.zuri.team/svgexport-8.svg");
+	background-image: url("../images/training.zuri.team/svgexport-8.svg");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
 }
 .white4 {
-	background-image: url("/images/training.zuri.team/svgexport-9.svg");
+	background-image: url("../images/training.zuri.team/svgexport-9.svg");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
 }
 .white5 {
-	background-image: url("/images/training.zuri.team/svgexport-10.svg");
+	background-image: url("../images/training.zuri.team/svgexport-10.svg");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: top right;
@@ -559,7 +559,7 @@ nav ul {
 
 .accordion {
 	width: 100%;
-	padding: 2rem 3rem 2rem 1rem;
+	padding: 0 0.7rem;
 	border: 0.05px solid #454447 !important;
 	font-size: 1rem;
 	text-align: left;
@@ -571,14 +571,16 @@ nav ul {
 }
 
 details p {
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 	font-weight: 500;
-	font-size: 0.8rem;
+	color: var(--primaryRed);
+	font-size: 1rem;
 	border-top: 2px dotted black;
-	padding-top: 1rem;
+	padding: 1rem 0.7rem;
 }
 
 summary {
+	padding: 2rem 3rem 2rem 1rem;
 	list-style-type: none;
 }
 
@@ -1035,7 +1037,7 @@ hr {
 
 	.hero-text {
 		padding-bottom: 9rem;
-		background-image: url("/images/training.zuri.team/svgexport-3.svg"),
+		background-image: url("../images/training.zuri.team/svgexport-3.svg"),
 			url("../images/training.zuri.team/svgexport-4.svg");
 		background-size: 14%, 8%;
 		background-repeat: no-repeat, no-repeat;
@@ -1220,7 +1222,6 @@ hr {
 		width: 25%;
 	}
 
-
 	.footer-bottom {
 		display: flex;
 		flex-direction: row;
@@ -1314,6 +1315,7 @@ hr {
 		padding: 0.8rem 0.4rem 0.8rem 1rem;
 	}
 
+	/* Hero-section */
 	.left-img {
 		width: 75%;
 	}
@@ -1423,11 +1425,11 @@ hr {
 	/* Help */
 
 	.help-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-size: 10%, 5%;
-background-position: 54% 5%, 1% 96.5%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-size: 10%, 5%;
+		background-position: 54% 5%, 1% 96.5%;
 	}
 
 	.help-left {
@@ -1470,7 +1472,7 @@ background-position: 54% 5%, 1% 96.5%;
 	/* FAQs */
 	#FAQ {
 		background-size: 15%;
-	background-position: 18% 5%;
+		background-position: 18% 5%;
 	}
 
 	.faq-heading {
@@ -1489,9 +1491,10 @@ background-position: 54% 5%, 1% 96.5%;
 	#program {
 		padding-bottom: 10rem;
 		background-image: url("../images/training.zuri.team/svgexport-31.svg"),
-		url("../images/training.zuri.team/svgexport-34.svg"),
-		url("../images/training.zuri.team/red-dots.png"), url("../images/training.zuri.team/red-dots.png");
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+			url("../images/training.zuri.team/svgexport-34.svg"),
+			url("../images/training.zuri.team/red-dots.png"),
+			url("../images/training.zuri.team/red-dots.png");
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 		background-size: 15%, 8%, 19%, 7%;
 		background-position: 27% 4%, 90% 2%, 100% 90%, 8% 95%;
 	}
@@ -1509,7 +1512,7 @@ background-position: 54% 5%, 1% 96.5%;
 		font-size: 3rem;
 		padding: 0;
 	}
-	
+
 	.footer-logo {
 		width: 35%;
 	}
@@ -1525,6 +1528,172 @@ background-position: 54% 5%, 1% 96.5%;
 	.i4g {
 		width: 40%;
 	}
+}
 
-	
+/* Large screens */
+@media (min-width: 1200px) {
+	.header-logo {
+		width: 20%;
+	}
+
+	.main-logo {
+		width: 100%;
+	}
+
+	nav {
+		width: 31%;
+		margin-right: -20rem;
+	}
+
+	nav a {
+		color: var(--texts);
+		font-size: 0.93rem;
+	}
+
+	.lollipop {
+		width: 13%;
+	}
+
+	.pill-link {
+		left: 16%;
+		top: 17%;
+		padding: 0.6rem 0.4rem 0.6rem 1rem;
+	}
+
+/* Hero-section */
+.hero-section {
+	flex-direction: row; 
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 9rem;
+}
+
+.right-img {
+	width: 30%;
+	margin: 0;
+}
+
+.left-img {
+	width: 36%;
+}
+
+.hero-heading {
+	background-size: 32%;
+	background-position: 85% 84%;
+}
+
+
+.hero-text {
+	width: 55%;
+	background-size: 15%, 11%;
+		background-position: 70% 92%, 5% 80%;
+}
+
+.right-img {
+	display: block;
+}
+
+.hero-txt2 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 2.5rem;
+}
+
+.hero-cta {
+	width: 25%;
+}
+
+/* About */
+.left p, .right p {
+	font-size: 1.55rem;
+}
+
+.center {
+	width: 25%;
+}
+
+/* why-us */
+.why-us__text {
+	width: 60%;
+}
+
+.why-us__text h2 {
+	font-size: 2.2rem;
+}
+
+.why-us__img {
+	width: 15%;
+}
+
+.cards {
+	width: 100%;
+}
+
+.card-container {
+	width: 32%;
+}
+
+/* help */
+.help-text__bold {
+	padding: 0;
+}
+
+.pills {
+	width: 72%;
+}
+
+.pill img {
+	width: 20%;
+}
+
+.pill {
+	width: 48%;
+	border: 1px solid white;
+}
+
+.help-cta {
+	width: 30%;
+}
+
+.white-cta-pill {
+	padding: 0.7rem 1rem;
+}
+
+.pill p {
+	font-size: 1rem;
+}
+
+/* scope */
+.scope-text {
+	background-size: 15%;
+}
+
+.scope-heading {
+	font-size: 2.5rem;
+}
+
+.scope-card-container {
+	width: 32%;
+	border-radius: 35px;
+}
+
+.twitter-cta {
+	width: 20%;
+}
+
+.footer-logo {
+	width: 23%;
+}
+
+.socials {
+	width: 15%;
+}
+.sub-links {
+	width: 38%;
+}
+
+.i4g {
+	width: 45%;
+}
 }
