@@ -568,6 +568,9 @@ nav ul {
 	outline: none;
 	cursor: pointer;
 	font-weight: 600;
+
+list-style-type: none;
+
 }
 
 details p {
@@ -577,6 +580,8 @@ details p {
 	font-size: 1rem;
 	border-top: 2px dotted black;
 	padding: 1rem 0.7rem;
+
+
 }
 
 summary {
@@ -991,6 +996,11 @@ hr {
 	#FAQ {
 		background-position: 15% 4%;
 	}
+
+summary, .accordion {
+
+list-style-type: none;
+}
 
 	#program {
 		background-position: 22.5% 2%, 93% 2%, 100% 97%;
