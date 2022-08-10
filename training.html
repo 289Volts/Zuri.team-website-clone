@@ -8,10 +8,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
     <!-- Stylesheets -->
@@ -21,11 +20,12 @@
 
 <body>
     <!-- modal -->
-    <div id="modal-container">
+    <div class="modal-container modal" id="modal-container">
         <div class="modal1 ">
             <div class="modal-heading">
                 <p class="modal-heading-txt">Zuri Internship Is Optional </p>
-                <button id="close-btn"><img class="close-btn" src="images/training.zuri.team/close-btn.svg" alt="">
+                <button onclick="closeModal()" id="close-btn" class="closebtn"><img class="close-btn"
+                        src="images/training.zuri.team/close-btn.svg" alt="">
                 </button>
             </div>
             <p class="modal-mid-text">What do we mean by this?</p>
@@ -36,11 +36,14 @@
         </div>
     </div>
 
-    <div class="modal-container-Two" id="modal-container-Two">
-        <div class="modal1">
-            <p class="modal-heading">Laptop Reward (Upgrade Or New One)</p>
-            <button id="close-btn2"><img class="close-btn" src="images/training.zuri.team/close-btn.svg" alt="">
-            </button>
+    <div class="modal-container-Two modal" >
+        <div class="modal2">
+            <div class="modal-heading">
+                <p class="modal-heading-txt">Laptop Reward <br>(Upgrade Or New One)</p>
+                <button onclick="closeModal2()" class="closebtn" id="close-btn"><img class="close-btn"
+                        src="images/training.zuri.team/close-btn.svg" alt="">
+                </button>
+            </div>
             <p class="modal-mid-text">What do we mean by this?</p>
             <p class="modal-text">We will be working with our partners on how to get laptops for exceptional
                 participants who genuinely need a better
@@ -48,13 +51,16 @@
         </div>
     </div>
 
-    <div class="modal-container-Three" id="modal-container-Three">
-        <div class="modal1">
-            <p class="modal-heading">Job Reward</p>
-            <button id="close-btn3"><img class="close-btn" src="images/training.zuri.team/close-btn.svg" alt="">
-            </button>
+    <div class="modal-container-Three modal">
+        <div class="modal3">
+            <div class="modal-heading">
+                <p class="modal-heading-txt">Job Reward</p>
+                <button onclick="closeModal3()" id="close-btn" class="closebtn"><img class="close-btn"
+                        src="images/training.zuri.team/close-btn.svg" alt="">
+                </button>
+            </div>
             <p class="modal-mid-text">What do we mean by this?</p>
-            <p class="modal-text">This is a beginner-focused program; we will not be exclusively recommending
+            <p class="modal-text3">This is a beginner-focused program; we will not be exclusively recommending
                 everyone for jobs or job placement. We will
                 not be placing everyone in our talent pool. We will select very few who are exceptional, smart and
                 able to out-perform
@@ -64,12 +70,14 @@
         </div>
     </div>
 
-    <div class="modal-container-Four" id="modal-container-Four">
-        <div class="modal1">
-            <p class="modal-heading">More Training</p>
-            <button id="close-btn4"><img class="close-btn" src="images/training.zuri.team/close-btn.svg" alt="">
-            </button>
-            <p class="modal-mid-text">What do we mean by this?</p>
+    <div class="modal-container-Four modal">
+        <div class="modal4">
+            <div class="modal-heading">
+                <p class="modal-heading-txt">More Training</p>
+                <button onclick="closeModal4()" id="close-btn" class="closebtn"><img class="close-btn" src="images/training.zuri.team/close-btn.svg" alt="">
+                </button>
+            </div>
+            <p class="modal-mid-text4">What do we mean by this?</p>
             <p class="modal-text">We will be partnering with more companies to provide more training to
                 participants in this track. However, this is
                 subject to the partners. If we cannot get partners in any of the items listed below, we will not
@@ -124,8 +132,8 @@
                     <a class="hero-cta red-cta-pill" href="index.html" target="_blank">Enroll Now</a>
                 </div>
             </div>
-                <div class="right-img"><img src="images/training.zuri.team/male1.jpg" alt=""></div>
-            
+            <div class="right-img"><img src="images/training.zuri.team/male1.jpg" alt=""></div>
+
         </div>
 
         <!-- about us -->
@@ -443,15 +451,17 @@
                     <p>Post Program:</p>
                     <ul>
                         <li>Certification of Attendance</li>
-                        <li>Zuri Internship <button id="info1" class="info-btn"><img class="info"
+                        <li>Zuri Internship <button onclick="openModal()" id="info" class="info-btn"><img class="info"
                                     src="images/training.zuri.team/svgexport-37.svg" alt=""></button>
                         </li>
-                        <li>Laptop Reward (upgrade or new one)<button id="info2" class="info-btn"><img class="info2"
-                                    src="images/training.zuri.team/svgexport-37.svg" alt=""></button></li>
-                        <li>Job Placement<button id="info3" class="info-btn"><img class="info"
+                        <li>Laptop Reward (upgrade or new one)<button onclick="openModal2()" id="info"
+                                class="info-btn"><img class="info2" src="images/training.zuri.team/svgexport-37.svg"
+                                    alt=""></button></li>
+                        <li>Job Placement
+                            <button onclick="openModal3()" id="info" class="info-btn"><img class="info"
                                     src="images/training.zuri.team/svgexport-37.svg" alt=""></button>
                         </li>
-                        <li>Zuri Talent Pool<button id="info4" class="info-btn"><img class="info"
+                        <li>Zuri Talent Pool<button onclick="openModal4()" id="info" class="info-btn"><img class="info"
                                     src="images/training.zuri.team/svgexport-37.svg" alt=""></button>
                         </li>
                     </ul>
