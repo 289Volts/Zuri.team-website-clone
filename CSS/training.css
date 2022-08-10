@@ -582,6 +582,11 @@ details p {
 summary {
 	padding: 2rem 3rem 2rem 1rem;
 	list-style-type: none;
+cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+	display: none;
 }
 
 .close {
