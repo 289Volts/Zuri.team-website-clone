@@ -1033,13 +1033,14 @@ hr {
 
 	.pill-link {
 		width: 80%;
-		top: 20%;
+		top: 17%;
 		left: 17%;
 		padding: 0.7rem 1rem;
 		padding-left: 1.5rem;
 	}
 
 	.lollipop {
+		width: 38%;
 		margin-right: 0;
 	}
 	.hero-heading {
