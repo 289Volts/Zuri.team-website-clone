@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/averta-standard");
+
 
 * {
 	box-sizing: border-box;
@@ -21,18 +21,12 @@ a {
 	cursor: pointer;
 }
 
-@font-face {
-	font-family: "Averta 400";
-	src: url(Fonts/AvertaStd-Regular.ttf) format("truetype");
-	font-weight: 400;
-}
-
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	font-family: "Averta Standard", "Averta 400", "Nunito Sans", sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 }
 /* Hero-Section */
 .hero {

@@ -22,6 +22,19 @@
     <div class="modal-container modal" id="modal-container">
         <div class="modal1 ">
             <div class="modal-heading">
+                <p class="modal-heading-txt" id="modal-title"></p>
+                <button onclick="handleCloseModal()" id="close-btn" class="closebtn"><img class="close-btn"
+                        src="images/training.zuri.team/close-btn.svg" alt="">
+                </button>
+            </div>
+            <p class="modal-mid-text">What do we mean by this?</p>
+            <p class="modal-text" id="modal-body"></p>
+        </div>
+    </div>
+
+    <!-- <div class="modal-container modal" id="modal-container">
+        <div class="modal1 ">
+            <div class="modal-heading">
                 <p class="modal-heading-txt">Zuri Internship Is Optional </p>
                 <button onclick="closeModal()" id="close-btn" class="closebtn"><img class="close-btn"
                         src="images/training.zuri.team/close-btn.svg" alt="">
@@ -82,7 +95,7 @@
                 subject to the partners. If we cannot get partners in any of the items listed below, we will not
                 be doing the training.</p>
         </div>
-    </div>
+    </div> -->
     <!-- Navigation -->
     <header>
         <div class="navbar">
@@ -450,17 +463,17 @@
                     <p>Post Program:</p>
                     <ul>
                         <li>Certification of Attendance</li>
-                        <li>Zuri Internship <button onclick="openModal()" id="info" class="info-btn"><img class="info"
+                        <li>Zuri Internship <button id="info" class="info-btn"><img id="modal-one" onclick="handleOpenModal(event)" class="info"
                                     src="images/training.zuri.team/svgexport-37.svg" alt=""></button>
                         </li>
-                        <li>Laptop Reward (upgrade or new one)<button onclick="openModal2()" id="info"
-                                class="info-btn"><img class="info2" src="images/training.zuri.team/svgexport-37.svg"
+                        <li>Laptop Reward (upgrade or new one)<button id="info"
+                                class="info-btn"><img id="modal-two"  onclick="handleOpenModal(event)" class="info" src="images/training.zuri.team/svgexport-37.svg"
                                     alt=""></button></li>
                         <li>Job Placement
-                            <button onclick="openModal3()" id="info" class="info-btn"><img class="info"
+                            <button id="info" class="info-btn"><img id="modal-three"  onclick="handleOpenModal(event)" class="info"
                                     src="images/training.zuri.team/svgexport-37.svg" alt=""></button>
                         </li>
-                        <li>Zuri Talent Pool<button onclick="openModal4()" id="info" class="info-btn"><img class="info"
+                        <li>Zuri Talent Pool<button id="info" class="info-btn"><img id="modal-four" onclick="handleOpenModal(event)" class="info"
                                     src="images/training.zuri.team/svgexport-37.svg" alt=""></button>
                         </li>
                     </ul>
