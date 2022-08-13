@@ -1,7 +1,5 @@
-
-
 * {
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 	padding: 0;
 	margin: 0;
 }
@@ -26,7 +24,7 @@ html {
 }
 
 body {
-	font-family: "Nunito Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 /* Hero-Section */
 .hero {
@@ -56,16 +54,17 @@ body {
 .hero-section__heading {
 	font-size: var(--heading);
 	text-align: center;
+	font-weight: 500;
 	color: var(--headings);
 	margin-bottom: 2.3rem;
-	letter-spacing: 2px;
 }
 
 .hero-section__text {
 	text-align: center;
-	font-size: var(--text);
+	font-size: 0.9rem;
+	font-weight: 500;
 	color: var(--headings);
-	line-height: 1.5;
+	line-height: 1.6;
 	margin-bottom: 5.7rem;
 	opacity: 0.9;
 }
@@ -85,20 +84,22 @@ body {
 	color: white;
 	background-color: var(--links);
 	border: none;
-	padding: 0.75rem 0.6rem;
+	font-size: 0.9rem;
+	padding: 0.8rem 0.6rem;
 	margin: 0 auto;
 	text-align: center;
-	margin-bottom: 2.4rem;
-	/* height: 2rem; */
+	margin-bottom: 2rem;
 }
 
 .hero-section__transbtn {
 	width: 70%;
+	font-weight: 500;
 	color: var(--links);
 	background-color: white;
 	border: 1px solid var(--links);
 	padding: 0.8rem 1.5rem;
 	margin: 0 auto;
+	font-size: 0.9rem;
 	text-align: center;
 }
 
@@ -168,7 +169,7 @@ a:not(#button):focus {
 
 .card-container {
 	background-color: #fffafa;
-	padding: 2.5rem 1.3rem 5rem 2rem;
+	padding: 2.5rem 1.5rem 5rem 2rem;
 	margin: 0 0 2rem 0;
 	margin-bottom: 2.5rem;
 	display: flex;
@@ -198,7 +199,7 @@ footer {
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
-	padding: 5rem 1rem 2rem 1rem;
+	padding: 6rem 1rem 2rem 1rem;
 	padding-top: 7rem;
 	text-align: center;
 }
@@ -220,6 +221,7 @@ footer {
 
 .links h2 {
 	margin-bottom: 0.8rem;
+	font-weight: 500;
 }
 
 .links a {
@@ -246,6 +248,7 @@ footer {
 .contact__heading {
 	margin-bottom: 0.5rem;
 	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 address {
@@ -265,6 +268,7 @@ address {
 }
 
 .socials h2 {
+	font-weight: 500;
 	margin: 0.5rem 0 0.6rem 0;
 }
 
@@ -272,11 +276,12 @@ address {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .social-icons img {
-	width: 18px;
+	width: 70%;
 }
 
 hr {
@@ -292,39 +297,72 @@ footer:nth-last-child(1) {
 	color: var(--headings);
 }
 
-.right-img, .left-img {
-		display: none;
-	}
+.right-img,
+.left-img {
+	display: none;
+}
 
-/* XS screens*/ 
+/* XS screens*/
 @media (max-width: 320px) {
-
 	.hero-section {
 		padding: 0.6rem;
 	}
+
+	.hero-section__text {
+		padding: 0 0.2rem;
+	}
 	.hero-section__redbtn {
-		width: 76%;
-		padding: 0.85rem 1rem;
+		width: 70%;
+		padding: 0.85rem 0.5rem;
 	}
 
 	.hero-section__transbtn {
-		width: 72.5%;
-		padding: 0.9rem 1.7rem;
+		width: 74%;
+		padding: 0.8rem 1.7rem;
+		font-weight: 500;
 	}
 
 	.label {
 		margin-top: 7rem;
 		padding-top: 7rem;
+		padding: 0rem 1rem;
 	}
 
-	hr {
-		bottom: 1rem;
+	.label p {
+		font-size: 1.35rem;
+	}
+
+	.card-container {
+		padding-right: 1.5rem;
+	}
+
+	.card__text,
+	.card__links {
+		font-size: 0.9rem;
 	}
 
 	footer {
 		width: 100%;
 		padding-right: 2rem;
 		padding-left: 2rem;
+	}
+
+	hr {
+		bottom: 1rem;
+	}
+
+	.links h2,
+	.contact__heading {
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+
+	.socials h2 {
+		font-weight: 500;
+	}
+
+	address {
+		padding: 0;
 	}
 }
 
@@ -380,17 +418,17 @@ footer:nth-last-child(1) {
 	.hero-section__redbtn {
 		width: 45%;
 		margin: 0;
-padding: 0.7rem 0.8rem;
+		padding: 0.7rem 0.8rem;
 	}
 
 	.hero-section__transbtn {
-width: 30%;
-padding: 0.6rem 1rem;
+		width: 75%;
+		padding: 0.6rem 1rem;
 	}
 
 	.hero-section {
 		padding: 0 3rem;
-		padding-bottom: 3rem;
+		padding-bottom: 4rem;
 	}
 
 	.label {
@@ -406,9 +444,9 @@ padding: 0.6rem 1rem;
 		margin-bottom: 4rem;
 	}
 
-.card-container {
-	width: 80%;
-}
+	.card-container {
+		width: 80%;
+	}
 
 	.card__text {
 		line-height: 1.5;
@@ -420,73 +458,9 @@ padding: 0.6rem 1rem;
 	}
 
 	footer {
-		padding: 6rem 0 2rem 0;
-		padding-top: 6rem;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
-		width: 90%;
-		margin: auto;
-	}
-
-	.links a {
-		font-size: 1rem;
-	}
-
-	.contact__heading {
-		margin: 0;
-	}
-
-	.socials {
-		width: 30%;
-	}
-
-	.social-icons {
-	width: 50%;
-	}
-
-	.footer__img {
-		width: 30%;
-		margin: 0;
-	}
-
-	.footer__logo {
-		width: 60%;
-	}
-
-	address {
-		padding: 0;
-	}
-
-	.contact {
-		width: 30%;
-	}
-
-	.links h2,
-.contact h2,
-.socials h2 {
-	font-size: 1rem;
-	margin: 0 0 1rem 0;
-}
-
-.copy {
-	font-size: 0.8rem;
-}
-
-	hr {
-		display: none;
-	}
-
-
-	footer a {
-		font-weight: 400;
-	}
-
-	/*  */
-
-	footer {
-		width: 100%;
+		width: 95%;
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
 		margin: 6rem auto 0rem auto;
@@ -498,12 +472,21 @@ padding: 0.6rem 1rem;
 	.socials h2,
 	.contact h2 {
 		font-size: 1rem;
+		margin: 0 0 1rem 0;
 	}
+
 	.contact {
 		width: 20%;
 		text-align: left !important;
 		align-items: flex-start;
 		font-size: 0.8rem;
+	}
+	footer a {
+		font-weight: 400;
+	}
+
+	hr {
+		display: none;
 	}
 
 	address {
@@ -512,6 +495,7 @@ padding: 0.6rem 1rem;
 		font-weight: 400;
 		text-align: left;
 		width: 100%;
+		padding: 0;
 	}
 
 	.links {
@@ -539,21 +523,28 @@ padding: 0.6rem 1rem;
 }
 
 /* Medium/Laptops screens */
-@media (min-width: 1000px) {
-
+@media (min-width: 992px) {
+	.hero {
+		height: 45vh;
+	}
 	.hero-section {
 		width: 70%;
 		margin: 0 auto;
 		padding: 0 2rem;
-		height: 100vh;
 	}
 
 	.hero-section__img {
-		padding: 4.2rem 0 5.5rem 0;
+		padding: 5.2rem 0 5.5rem 0;
 	}
 
 	.hero-section__heading {
 		font-size: 2rem;
+	}
+
+	.hero-section__text {
+		padding: 0 1.5rem;
+		font-size: 0.9rem;
+		margin-bottom: 4rem;
 	}
 
 	.hero-section__buttons {
@@ -564,26 +555,26 @@ padding: 0.6rem 1rem;
 		justify-content: space-between;
 	}
 
-.hero-section__transbtn {
-	padding: 0.9rem 1.5rem;
-	width: 55%;
-}
+	.hero-section__transbtn {
+		padding: 0.8rem 1.5rem;
+		width: 55%;
+	}
 
 	.hero-section__redbtn {
 		width: 45%;
-		padding: 1rem 0.5rem;
+		padding: 0.8rem 0.5rem;
 		margin: 0;
 	}
 
 	.label {
 		width: 60%;
 		margin: 9rem auto auto;
-		padding-top: 0;
+		padding-top: 0rem;
 	}
 
 	.label h4 {
 		font-size: 1rem;
-font-weight: 600;
+		font-weight: 600;
 	}
 
 	.label p {
@@ -591,24 +582,50 @@ font-weight: 600;
 	}
 
 	.cards {
-		padding-top: 2rem;
+		padding-top: 4rem;
 		margin-top: 2rem;
-		padding-bottom: 9rem;
+		padding-bottom: 7rem;
 		display: flex;
 		flex-direction: row;
-		width: 100%;
+		margin: 0 auto;
+		width: 90%;
+		align-items: stretch;
 		justify-content: space-between;
-		align-items: flex-start;
+		position: relative;
+	}
+
+	.right-img,
+	.left-img {
+		display: block;
+		width: 30%;
+		height: 65%;
+	}
+
+	.right-img {
+		position: absolute;
+		top: 0;
+		right: -3rem;
+		z-index: -1;
+	}
+
+	.left-img {
+		position: absolute;
+		top: 0;
+		left: -3rem;
+		z-index: -1;
 	}
 
 	.card-container {
-		padding: 5rem 3rem 3rem 2rem;
+		padding: 5rem 2rem 3rem 1.5rem;
 		width: 32%;
-		font-weight: 600;
+		font-weight: 500;
+		justify-content:space-between;
+		
 	}
 
-	.card__text {
+	.card__text, .card__links {
 		text-align: left;
+		font-size: 0.9rem;
 	}
 
 	footer {
@@ -616,8 +633,8 @@ font-weight: 600;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin: 20rem auto 0rem auto;
-		padding: 3rem 1.5rem 8rem 1.5rem;
+		margin: 0 auto 0rem auto;
+		padding: 3rem 1.5rem 2rem 1.5rem;
 		position: relative;
 		font-size: 1rem;
 		bottom: 2rem;
@@ -649,105 +666,123 @@ font-weight: 600;
 	}
 
 	.social-icons {
-		width: 70%;
+		width: 100%;
 	}
 
 	.footer__img {
 		width: 12%;
 	}
-
 }
 
 /* Desktop */
-@media (min-width: 1440px) {
-	.container{
-		width: 80%;
-		max-width: 1440px;
+@media (min-width: 1200px) {
+	.container {
+		width: 100%;
 		margin: 0 auto;
 	}
 
 	.hero {
 		width: 100%;
+		height: 100vh;
 	}
 
 	.hero-section {
-		width: 50%;
+		width: 80%;
 		margin: 0 auto;
 		padding: 0 1rem;
-		height: 65vh;
+	}
+
+	.hero-section__text {
+		width: 70%;
+		margin: 0 auto 5rem auto;
 	}
 
 	.hero-section__buttons {
 		display: flex;
-		justify-content: space-around;
-		width: 80%;
+		justify-content: space-between;
+		width: 50%;
 	}
 
 	.hero-section__redbtn {
+		width: 45%;
 		padding: 0.9rem 1.5rem;
 	}
 
 	.hero-section__transbtn {
+		width: 45%;
 		padding: 0.8rem 1.8rem;
 	}
 
 	.label {
-		width: 80%;
-		margin: 6rem auto 0rem auto;
+		width: 50%;
+		margin: 6rem auto 3rem auto;
 		padding: 0 4rem;
 	}
-	
-	
+
 	.cards {
 		padding: 1rem 3.5rem 8rem 3.5rem;
 		margin: 0 auto;
 		margin-top: 2rem;
 		display: flex;
 		flex-direction: row;
-		width: 97%;
+		width: 90%;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: stretch;
 		position: relative;
 	}
 
-	.right-img, .left-img {
-		width: 350px;
-		height: 450px;
+	.right-img,
+	.left-img {
+		display: block;
+		height: 75%;
+		width: 27%;
 	}
 
 	.right-img {
 		position: absolute;
-		top: -2.7rem;
-		right: -4rem;
+		top: -3rem;
+		right: -4.5rem;
 		z-index: -1;
-
 	}
 
 	.left-img {
 		position: absolute;
-		top: -2.7rem;
-		left: -4rem;
+		top: -3rem;
+		left: -4.5rem;
 		z-index: -1;
 	}
 
 	.card-container {
 		padding: 4rem 4rem 5rem 2rem;
-		width: 31%;
+		width: 29%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 100%
 	}
+
+
+.card__text {
+	font-size: 1rem;
+}
 
 	footer {
 		display: flex;
 		justify-content: space-between;
-		width: 90%;
+		align-items: flex-start;
+		width: 85%;
 		margin: 0 auto;
 		padding-left: 0;
 		padding-right: 0;
 		margin-top: 5rem;
+		padding-top: 0;
 		position: relative;
 	}
 
+	.socials h2, .contact h2, .links h2 {
+		font-size: 1.5rem;
+	}
+
+	.contact {
+		width: 15%;
+	}
 }

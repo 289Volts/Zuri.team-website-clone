@@ -168,7 +168,7 @@ nav a:not(.hire, .hire2) {
 	background-color: var(--primaryRed);
 	color: var(--backgroundColor) !important;
 	border-bottom-right-radius: 10px;
-	padding: 0.6rem 1.5rem;
+	padding: 0.5rem 1rem;
 	font-size: 0.9rem;
 }
 
@@ -183,7 +183,7 @@ nav a:not(.hire, .hire2) {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 5rem;
+	padding-bottom: 3rem;
 }
 
 .hero__text {
@@ -193,13 +193,13 @@ nav a:not(.hire, .hire2) {
 }
 
 .hero__text h1 {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 0.8rem;
 	padding-bottom: 1.5rem;
 	background-image: url("/images/talent.zuri.team/thick-wave.svg");
-	background-position: 94% 91%;
+	background-position: 96% 93%;
 	background-size: 100px;
 	background-repeat: no-repeat;
 }
@@ -209,7 +209,6 @@ nav a:not(.hire, .hire2) {
 }
 
 .hero__text p {
-	padding: 0 0.8rem;
 	color: #878787;
 	font-weight: 500;
 	word-spacing: 1px;
@@ -227,16 +226,15 @@ nav a:not(.hire, .hire2) {
 	align-items: center;
 }
 
-.hire2,
+
 #hero__cta-gray {
 	color: var(--backgroundColor) !important;
 	border: none;
 	border-radius: 3.5px;
-	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
 	text-decoration: none;
 	font-size: 0.9rem;
 	font-weight: 500;
-	margin: 0 auto;
 }
 
 .hire2:hover, #hero__cta-gray:hover {
@@ -244,10 +242,17 @@ nav a:not(.hire, .hire2) {
 }
 
 .hire2 {
+	color: var(--backgroundColor) !important;
 	width: 100%;
+	border: none;
+	border-radius: 3.5px;
 	text-align: center;
+	border-bottom-right-radius: 10px;
 	background-color: var(--primaryRed);
-	padding: 0.7rem 1rem;
+	padding: 0.8rem 1rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+	text-decoration: none;
 	margin-bottom: 1rem;
 }
 
@@ -258,7 +263,7 @@ nav a:not(.hire, .hire2) {
 	cursor: pointer;
 }
 
-.hero-section #hero__cta-gray {
+.hero-section, .hero__text {
 	margin-bottom: 3rem;
 }
 
@@ -322,7 +327,7 @@ nav a:not(.hire, .hire2) {
 }
 
 .flag {
-	width: 55px;
+	width: 18%;
 	padding: 0.3rem 0.6rem;
 	background-color: white;
 	border-radius: 5px;
@@ -460,7 +465,7 @@ nav a:not(.hire, .hire2) {
 }
 
 .why-us-hire {
-	width: 35%;
+	width: fit-content;
 	text-align: center;
 	background-color: var(--primaryRed);
 	padding: 0.7rem 1rem;
@@ -471,7 +476,6 @@ nav a:not(.hire, .hire2) {
 	text-decoration: none;
 	font-size: 0.9rem;
 	font-weight: 500;
-	margin: 0 auto;
 	margin-bottom: 1rem;
 }
 
@@ -493,16 +497,16 @@ footer {
 
 .footer-logo {
 	margin-bottom: 1rem;
-	order: 1;
+	order: 0;
 }
 
 .social-icons {
-	width: 50%;
+	width: 70%;
 	margin: 0 auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: baseline;
-	order: 2;
+	order: 0;
 }
 
 .icon {
@@ -510,7 +514,12 @@ footer {
 }
 
 .social-icons img {
-	width: 30px;
+	width: 65%;
+}
+
+.footer-bottom {
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 hr {
@@ -518,11 +527,11 @@ hr {
 	width: 100%;
 	background-color: #cecece;
 	border: none;
-	order: 4;
+	order: 0;
 }
 
 .footer-text {
-	order: 5;
+	order: 0;
 }
 
 .footer-text__txt {
@@ -533,7 +542,7 @@ hr {
 }
 
 .email {
-	order: 3;
+	order: 0;
 	margin: 2.5rem;
 }
 
@@ -545,27 +554,39 @@ hr {
 /* Media queries */
 
 /* XS screens */
-@media (max-width: 320px) {
-	/* Header */
+ @media (min-width: 375px) {
+.hire {
+	padding: 0.6rem 1.2rem;
+}
+
 	.logo img {
-		width: 80%;
+		width: 90%;
 	}
 
-	/* Hero-section */
 	.hero__text h1 {
 		font-size: 2.3rem;
-		background-position: 99% 94%;
+		background-position: 89% 94%;
 	}
 
 	.hero__text p {
 		padding: 0 0.63rem;
 	}
 
-	.hero__cta .hire2 {
-		width: 100%;
+	#hero__cta-gray {
+	padding: 0.8rem 1rem;
 	}
 
-	/* Impact-section */
+	.hire2 {
+		width: 100%;
+		margin: 0;
+		padding: 0.8rem 1rem;
+	}
+
+	.hero__cta {
+		flex-direction: row;
+		width: 90%;
+	}
+
 	#impact {
 		padding-bottom: 4rem;
 	}
@@ -581,28 +602,33 @@ hr {
 	}
 
 	.flag {
-		width: 50px;
+		width: 17%;
 	}
 
 	.illus {
-		width: 280px;
+		width: 100%;
 	}
 
-	/* Footer */
+	.why-us-hire {
+		width: fit-content;
+		margin: 0;
+	}
+
 	.social-icons {
-		width: 65%;
+		width: 70%;
 	}
 
 	.footer-email {
 		font-size: 1rem;
 	}
-}
+} 
 
 /* Medium screens */
 @media (min-width: 410px) {
 	/* Hero-section */
 	.hero-section h1 {
-		background-position: 87% 91%;
+		padding: 0 2rem 1.5rem 2rem;
+		background-position: 84% 95%;
 	}
 
 	.hero__cta {
@@ -610,7 +636,7 @@ hr {
 		align-items: flex-start;
 		justify-content: space-between;
 		align-items: center;
-		width: 85%;
+		width: 80%;
 		margin: 0 auto;
 		margin-bottom: 3rem;
 	}
@@ -626,6 +652,7 @@ hr {
 	.hire2 {
 		width:100%;
 		margin: 0;
+		padding: 0.7rem 1rem;
 	}
 
 	.illus {
@@ -652,8 +679,6 @@ hr {
 	}
 
 	.why-us__cta-gray {
-		width: 55%;
-		/* margin: 0; */
 		padding: 0.7rem 0;
 	}
 
@@ -675,7 +700,9 @@ hr {
 	}
 
 	.hero-section h1 {
-		background-position: 84.5% 93%;
+		padding: 0; 
+		padding-bottom: 1.2rem;
+		background-position: 74.5% 99%;
 	}
 
 	.hero__cta {
@@ -684,6 +711,10 @@ hr {
 		justify-content: space-between;
 		width: 100%;
 		margin: 0;
+	}
+
+	.hero__text p {
+		padding: 0;
 	}
 
 .hire2, .hero #hero__cta-gray {
@@ -788,7 +819,7 @@ hr {
 	}
 
 	.why-us__cta {
-		width: 60%;
+		width: 70%;
 	}
 
 	.why-us__cta #hero__cta-gray {
@@ -798,7 +829,7 @@ hr {
 	}
 
 	.why-us-hire {
-		width: 48%;
+		width: 40%;
 	}
 
 	/* Footer */
@@ -833,7 +864,7 @@ footer {
 
 
 .footer-text {
-	order: 3;
+	order: 0;
 }
 
 .footer-text__txt {
@@ -857,6 +888,7 @@ footer {
 
 	.footer-bottom {
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		width: 90%;
 		margin: 0 auto;
@@ -922,7 +954,7 @@ li {
 
 	.hero-section h1 {
 		font-size: 3rem;
-		background-position: 18.8% 91%;
+		background-position: 19% 96%;
 	}
 
 
@@ -1007,9 +1039,6 @@ li {
 }
 
 .skillset, .placement {
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 	margin: 0;
 	width: 100%;
 }
@@ -1021,7 +1050,11 @@ li {
 	}
 
 	.why-us__cta {
-		width: 60%;
+		width: 50%;
+	}
+
+	.why-us-hire {
+		width: 47%;
 	}
 
 	.why-us__title {
@@ -1033,7 +1066,7 @@ margin-bottom: 3rem;
 		width: 20%;
 	}
 
-	.footer-text__txt, .email {
+	.footer-text__txt, .footer-email {
 		font-size: 1.1rem;
 	}
 
