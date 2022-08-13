@@ -198,7 +198,7 @@ nav a:not(.hire, .hire2) {
 	line-height: 1.2;
 	margin-bottom: 0.8rem;
 	padding-bottom: 1.5rem;
-	background-image: url("/images/talent.zuri.team/thick-wave.svg");
+	background-image: url("../images/talent.zuri.team/thick-wave.svg");
 	background-position: 96% 93%;
 	background-size: 100px;
 	background-repeat: no-repeat;
@@ -276,7 +276,7 @@ nav a:not(.hire, .hire2) {
 
 .right img {
 	width: 100%;
-	background-image: url("/images/talent.zuri.team/thick-wave.svg");
+	background-image: url("../images/talent.zuri.team/thick-wave.svg");
 	background-position: 100% 87%;
 	background-size: 138px;
 	background-repeat: no-repeat;
@@ -284,7 +284,7 @@ nav a:not(.hire, .hire2) {
 
 /* Impact */
 #impact {
-	background-image: url("/images/talent.zuri.team/bg-img.png") !important;
+	background-image: url("../images/talent.zuri.team/bg-img.png") !important;
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 }
@@ -421,7 +421,7 @@ nav a:not(.hire, .hire2) {
 #why-us {
 	background-color: var(--colorCream);
 	width: 100%;
-	background-image: url("/images/talent.zuri.team/red-line.svg");
+	background-image: url("../images/talent.zuri.team/red-line.svg");
 	background-repeat: no-repeat;
 	background-size: 350px;
 	background-position: -30% 25%;
