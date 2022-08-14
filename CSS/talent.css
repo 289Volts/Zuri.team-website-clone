@@ -203,13 +203,8 @@ nav a:not(.hire, .hire2) {
 	line-height: 1.2;
 	margin-bottom: 0.8rem;
 	padding-bottom: 1.5rem;
-<<<<<<< HEAD
-	background-image: url("/images/talent.zuri.team/thick-wave.svg");
-	background-position: 96% 94%;
-=======
 	background-image: url("../images/talent.zuri.team/thick-wave.svg");
 	background-position: 96% 93%;
->>>>>>> 360d7bf6f84edfc2756211bd7c519666f6c1a954
 	background-size: 100px;
 	background-repeat: no-repeat;
 }
