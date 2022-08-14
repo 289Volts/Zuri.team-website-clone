@@ -621,11 +621,11 @@ footer:nth-last-child(1) {
 		padding: 5rem 2rem 3rem 1.5rem;
 		width: 32%;
 		font-weight: 500;
-		justify-content:space-between;
-		
+		justify-content: space-between;
 	}
 
-	.card__text, .card__links {
+	.card__text,
+	.card__links {
 		text-align: left;
 		font-size: 0.9rem;
 	}
@@ -698,7 +698,6 @@ footer:nth-last-child(1) {
 		width: 67%;
 		margin: 0 auto 5rem auto;
 		font-size: 1rem;
-		
 	}
 
 	.hero-section__buttons {
@@ -764,11 +763,10 @@ footer:nth-last-child(1) {
 		justify-content: space-between;
 	}
 
-
-.card__text {
-	font-size: 1rem;
-	text-align: justify;
-}
+	.card__text {
+		font-size: 1rem;
+		text-align: justify;
+	}
 
 	footer {
 		display: flex;
@@ -783,7 +781,9 @@ footer:nth-last-child(1) {
 		position: relative;
 	}
 
-	.socials h2, .contact h2, .links h2 {
+	.socials h2,
+	.contact h2,
+	.links h2 {
 		font-size: 1.5rem;
 	}
 
