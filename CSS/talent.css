@@ -27,14 +27,14 @@ body {
 	margin: 0 auto;
 }
 
-a {
+a, button {
 	cursor: pointer;
 	text-decoration: none;
-	/* font-weight: 600; */
 }
 
+
 .space {
-	padding: 6rem 0;
+	padding: 5rem 0;
 }
 
 /* Modal */
@@ -63,13 +63,13 @@ a {
 }
 
 .modal-contents {
-	width: 40%;
+	width: 90%;
 	margin: auto;
 	background-color: white;
 	color: black;
-	padding: 4rem 2rem;
+	padding:  2rem;
 	border-radius: 10px;
-	height: 400px;
+	height: fit-content;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -84,12 +84,12 @@ a {
 }
 
 .modal-content2 {
-	max-width: 450px;
+	max-width: 90%;
 	margin: auto;
 	background-color: white;
-	padding: 4rem 2rem;
+	padding: 2rem;
 	border-radius: 10px;
-height: 330px;
+height: max-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -102,7 +102,7 @@ height: 330px;
 	bottom: 0;
 }
 
-/* .modalbtn {
+.modalbtn {
 	background-color: var(--primaryRed);
 	color: var(--backgroundColor) !important;
 	border-radius: 3px;
@@ -113,19 +113,22 @@ height: 330px;
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
-} */
+	margin: 1.5rem 0;
+}
 
 .modal-contents h2, .modal-content2 h2 {
-	font-size: 2.5rem;
-	/* margin-bottom: 1rem; */
+	font-size: 2rem;
 	color: black;
 }
 
 .modal-contents p, .modal-content2 p {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 500;
-	padding: 0 2.5rem;
 	color: black;
+}
+
+.modal-text {
+	margin-top: 1.5rem;
 }
 
 .modalbtn-fill {
@@ -172,6 +175,10 @@ nav a:not(.hire, .hire2) {
 	font-size: 0.9rem;
 }
 
+.logo img {
+	width: 90%;
+}
+
 /* Hero-section */
 .hero-section {
 	padding: 8.5rem 0 0;
@@ -199,7 +206,7 @@ nav a:not(.hire, .hire2) {
 	margin-bottom: 0.8rem;
 	padding-bottom: 1.5rem;
 	background-image: url("/images/talent.zuri.team/thick-wave.svg");
-	background-position: 96% 93%;
+	background-position: 96% 94%;
 	background-size: 100px;
 	background-repeat: no-repeat;
 }
@@ -249,7 +256,7 @@ nav a:not(.hire, .hire2) {
 	text-align: center;
 	border-bottom-right-radius: 10px;
 	background-color: var(--primaryRed);
-	padding: 0.8rem 1rem;
+	padding: 0.8rem 1.5rem;
 	font-size: 0.9rem;
 	font-weight: 500;
 	text-decoration: none;
@@ -343,10 +350,6 @@ nav a:not(.hire, .hire2) {
 
 /* Skills & PLacements */
 
-.skills {
-	padding-bottom: 5rem;
-}
-
 .skills__title {
 	font-size: 1.7rem;
 	font-weight: 600;
@@ -368,7 +371,7 @@ nav a:not(.hire, .hire2) {
 	transform: translate3d(0px, -16px, 0px);
 }
 
-.skillset {
+.skillset, .placement {
 	cursor: pointer;
 	transform: translate3d(0px, 0px, 0px);
 	transition: transform 0.3s ease-out;
@@ -385,6 +388,7 @@ nav a:not(.hire, .hire2) {
 	line-height: 1.5;
 	margin: 0.7rem 0;
 	color: var(--textColor);
+font-size: 0.9rem;
 }
 
 .placement__title,
@@ -393,24 +397,6 @@ nav a:not(.hire, .hire2) {
 	font-weight: 600;
 	line-height: 1.1;
 	margin-bottom: 2rem;
-}
-
-.placement {
-	transition: transform 0.3s ease-out;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.8rem;
-	border-radius: 10px;
-	border: none;
-	outline: none;
-	box-shadow: 0 8px 30px 0px hsla(0, 0%, 48%, 0.16);
-	width: 47%;
-	cursor: pointer;
-	text-align: center;
-	line-height: 1.5;
-	margin: 0.7rem 0;
-	color: var(--textColor);
 }
 
 .item7, .item8 {
@@ -505,7 +491,7 @@ footer {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	order: 0;
 }
 
@@ -555,17 +541,21 @@ hr {
 
 /* XS screens */
  @media (min-width: 375px) {
+.modal-contents h2, .modal-content2 h2 {
+	font-size: 2.5rem;
+}
+
 .hire {
 	padding: 0.6rem 1.2rem;
 }
 
 	.logo img {
-		width: 90%;
+		width: 100%;
 	}
 
 	.hero__text h1 {
 		font-size: 2.3rem;
-		background-position: 89% 94%;
+		background-position: 88.5% 92%;
 	}
 
 	.hero__text p {
@@ -626,9 +616,14 @@ hr {
 /* Medium screens */
 @media (min-width: 410px) {
 	/* Hero-section */
+
+	.logo {
+		width: 50%;
+	}
+
 	.hero-section h1 {
 		padding: 0 2rem 1.5rem 2rem;
-		background-position: 84% 95%;
+		background-position: 82.5% 93%;
 	}
 
 	.hero__cta {
@@ -689,8 +684,16 @@ hr {
 
 /* Tablets */
 @media (min-width: 768px) {
+.modal-content2, .modal-contents {
+	width: 50%;
+}
+
 	.container {
 		width: 85%;
+	}
+
+	.logo {
+		width: 25%;
 	}
 
 	/* Hero-section */
@@ -702,7 +705,7 @@ hr {
 	.hero-section h1 {
 		padding: 0; 
 		padding-bottom: 1.2rem;
-		background-position: 74.5% 99%;
+		background-position: 74% 100%;
 	}
 
 	.hero__cta {
@@ -737,7 +740,7 @@ hr {
 
 	.hire2 {
 		margin-bottom: 0;
-		width: 130%;
+		padding: 0.7rem 1.6rem;
 	}
 
 	#hero__cta-gray {
@@ -773,6 +776,10 @@ hr {
 		padding-right: 0;
 	}
 
+	.impact__text--subtitle {
+		margin: 1rem 0;
+	}
+
 	.flags {
 		width: 100%;
 		margin-bottom: 0;
@@ -794,6 +801,10 @@ hr {
 		margin-bottom: 0;
 	}
 
+	.placement__title {
+		margin: 1.5rem 0;
+	}
+
 	.skillsets,
 	.placements {
 		width: 80%;
@@ -810,6 +821,10 @@ hr {
 		grid-template-columns: 1fr 1fr;
 	}
 
+.card1, .card2 {
+		display: none;
+	}
+
 	.why-us__card {
 		padding: 3.6rem 1.5rem;
 	}
@@ -819,7 +834,7 @@ hr {
 	}
 
 	.why-us__cta {
-		width: 70%;
+		width: 50%;
 	}
 
 	.why-us__cta #hero__cta-gray {
@@ -841,7 +856,6 @@ footer {
 	.footer-container {
 		display: flex;
 		flex-direction: column;
-		/* flex-wrap: wrap; */
 		width: 100% !important;
 	}
 
@@ -901,6 +915,10 @@ footer {
 
 /* Laptops screen */
 @media (min-width: 992px) {
+.modal-content2 {
+	width: 40%;
+}
+
 	.container {
 		width: 87%;
 	}
@@ -909,6 +927,10 @@ footer {
 		width: 100%;
 		padding: 0rem 4.7rem;
 		padding-top: 0.3rem;
+	}
+
+	.logo {
+		width: 22%;
 	}
 
 	nav a:not(.hire, .hire2) {
@@ -953,8 +975,13 @@ li {
 	}
 
 	.hero-section h1 {
-		font-size: 3rem;
-		background-position: 19% 96%;
+		font-size: 2rem;
+		background-position:90% 115%;
+	}
+
+	.hero__text p {
+		text-align: justify;
+		font-size: 1.2rem;
 	}
 
 
@@ -962,8 +989,12 @@ li {
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: space-between;
-		width: 78%;
+		width: 90%;
 		margin: 0;
+	}
+
+	.hire2 {
+		padding: 0.7rem 2rem;
 	}
 
 	.hire2,
@@ -1022,8 +1053,6 @@ li {
 	
 }
 
-
-
 .item7, .item8 {
 	padding: 0;
 	width: 100%;
@@ -1050,11 +1079,11 @@ li {
 	}
 
 	.why-us__cta {
-		width: 50%;
+		width: 55%;
 	}
 
 	.why-us-hire {
-		width: 47%;
+		width: 40%;
 	}
 
 	.why-us__title {
@@ -1074,15 +1103,136 @@ margin-bottom: 3rem;
 
 /* Laptops screen */
 @media (min-width: 1200px) {
+.modal-content2 {
+	width: 30%;
+	padding: 4rem 2rem;
+} 
+
+
+.modal-contents {
+	width: 30%;
+	padding-top: 3.5rem;
+}
+
+	.container {
+		width: 87%;
+	}
+
+	.logo {
+		width: 13%;
+	}
+
+	.nav__ul-links {
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
 .hero {
-	padding-top: 5rem;
+	padding-top: 3rem;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .right {
-	width: 35%;
+	width: 40%;
 }
 
 .left {
+	width: 47%;
+}
+
+
+.hero__text h1 {
+	font-size: 2.6rem;
+	background-size: 21%;
+	background-position: 96% 109%;
+}
+
+.hero__text p {
+	font-size: 1.3rem;
+	text-align: justify;
+	padding-right: 3rem;
+}
+
+.hero__cta {
+	width: 80%;
+	justify-content: space-between;
+}
+
+.hire2 {
+	width: 120%;
+}
+
+#hero__cta-gray {
+	width: 50%;
+}
+
+.impact__text--title {
+	font-size: 2.8rem;
+}
+
+.impact__text--subtitle, .impact__text--subtitle2 {
+	font-size: 1.3rem;
+}
+
+.impact__text--subtitle {
+	margin-top: 1.5rem;
+}
+
+.flags {
+	width: 63%;
+}
+
+.skills__title, .placement__title {
+	font-size: 2.5rem;
+}
+
+.skills__title {
+	margin-bottom: 2rem;
+}
+
+.placement__title {
+	margin: 3rem 0 2rem 0;
+}
+
+.skillset, .placement {
+	font-size: 1.2rem;
+}
+
+.why-us__cards {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.why-us__card {
+	width: 32%;
+	font-size: 1.2rem;
+}
+
+.card1, .card2 {
+	width: 15%;
+	display: block;
+}
+
+.why-us__cta {
 	width: 40%;
 }
+
+.why-us-hire {
+	width: 43%;
+	font-size: 1rem;
 }
+
+.why-us__cta-gray {
+	width: 44% !important;
+	font-size: 1.2rem;
+}
+
+.social-icons {
+	width: 17%;
+}
+}
+
