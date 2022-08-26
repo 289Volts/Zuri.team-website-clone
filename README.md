@@ -1,21 +1,25 @@
 # Zuri.team-website-clone
 
-# CONTENTS
+# CONTENT
 
 
-# Column Card task for Zuri Training 
+# Final task for Zuri Training 
 
  This was the final task given at the Zuri training. It is a clone of the official website for Zuri and the adjoining pages under it.
+# Live link
+https://rolandandkose.github.io/Zuri.team-website-clone/
+ 
 # Tehnologies Used
 
 - HTML
 - CSS
 - Javascript
-- Git
+
 # Layout
 
 - Flexbox
 - CSS Grid
+
 # ADDED FUNCTIONS
 
 - Google Fonts
