@@ -7,7 +7,7 @@
 
  This was the final task given at the Zuri training. It is a clone of the official website for Zuri and the adjoining pages under it.
 # Live link
-https://rolandandkose.github.io/Zuri.team-website-clone/
+https://289volts.github.io/Zuri.team-website-clone/
  
 # Tehnologies Used
 
